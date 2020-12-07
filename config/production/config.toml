@@ -1,0 +1,5 @@
+baseURL = "https://datasketch.github.io/datos-personales-y-leyes/"
+languageCode = "es-es"
+title = "BID"
+taxonomies = []
+publishDir = "docs"
