@@ -1,5 +1,7 @@
 {{ define "main" }}
+{{ if .Params.app }}
 <div class="h-screen">
-  <iframe src="https://datasketch.shinyapps.io/unfpa-mitos-salud-sexual/" class="w-full h-full" frameborder="0"></iframe>
+  <iframe src="{{.Params.app}}" class="w-full h-full" frameborder="0"></iframe>
 </div>
+{{ end }}
 {{ end }}
