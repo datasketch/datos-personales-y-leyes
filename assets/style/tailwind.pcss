@@ -1,3 +1,24 @@
 @tailwind base;
 @tailwind components;
+
+.dropdown {
+  @apply px-4 py-2 relative cursor-pointer;
+}
+
+.dropdown:hover .dropdown-label {
+  @apply opacity-0;
+}
+
+.dropdown:hover .dropdown-list {
+  @apply flex;
+}
+
+.dropdown-list {
+  @apply absolute w-full hidden flex-col border border-white left-0 leading-tight text-center py-2 top-0;
+}
+
+.dropdown-list > * ~ * {
+  @apply mt-3;
+}
+
 @tailwind utilities;
