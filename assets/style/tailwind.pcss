@@ -21,4 +21,17 @@
   @apply mt-3;
 }
 
+details {
+  @apply relative;
+}
+details > summary {
+  @apply cursor-pointer list-none select-none;
+}
+details > summary:focus {
+  @apply outline-none;
+}
+details > summary::-webkit-details-marker {
+  @apply hidden;
+}
+
 @tailwind utilities;

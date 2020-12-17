@@ -58,7 +58,7 @@
     <div class="flex flex-col items-start space-y-32">
       <div class="flex flex-col lg:flex-row lg:space-x-20">
         <div class="w-full lg:w-1/2">
-          <iframe class="w-full h-full" src="{{"charts/derechos_vulnerados.html"|absURL}}" frameborder="0"></iframe>
+          <iframe class="w-full" height="400px" src="{{"charts/derechos_vulnerados.html"|absURL}}" frameborder="0"></iframe>
         </div>
         <div class="w-full lg:w-1/2">
           <h2 class="font-lores uppercase text-2xl lg:text-4xl">
@@ -81,12 +81,12 @@
           <a href="{{ relref . "iniciativas-de-la-pandemia.md" }}" class="bg-space-cadet text-white font-lores px-3 py-2 rounded text-lg mt-6 inline-block">Explorar datos</a>
         </div>
         <div class="w-full lg:w-1/2">
-          <iframe class="w-full h-full" src="{{"charts/inic_vuln.html"|absURL}}" frameborder="0"></iframe>
+          <iframe class="w-full" height="400px" src="{{"charts/inic_vuln.html"|absURL}}" frameborder="0"></iframe>
         </div>
       </div>
       <div class="flex flex-col lg:flex-row lg:space-x-20">
         <div class="w-full lg:w-1/2">
-          <iframe class="w-full h-full" src="{{"charts/evaluacion.html"|absURL}}" frameborder="0"></iframe>
+          <iframe class="w-full" height="400px" src="{{"charts/evaluacion.html"|absURL}}" frameborder="0"></iframe>
         </div>
         <div class="w-full lg:w-1/2">
           <h2 class="font-lores uppercase text-2xl lg:text-4xl">
@@ -115,29 +115,33 @@
   </div>
   <div class="mx-auto mt-32 w-full md:w-10/12">
     <div class="flex flex-col items-start space-y-32">
-      <div class="flex flex-col md:flex-row">
-        <div class="w-full lg:w-1/2"></div>
+      <div class="flex flex-col lg:flex-row lg:space-x-20">
+        <div class="w-full lg:w-1/2">
+          <iframe src="https://s3.amazonaws.com/lena.dskt.ch/map-bid/map-bid.html" frameborder=0 width="100%" height="400px"></iframe>
+        </div>
         <div class="w-full lg:w-1/2">
           <h2 class="font-lores uppercase text-2xl lg:text-4xl text-dodger">
             Barbados y México tienen las leyes que <span class="text-ryb">más se ajustan</span> al estándar
           </h2>
           <p class="mt-6">
-            Barbados con su ley de datos personales “Data Protection Act 1 2019” coincide mayoritariamente (110 coincidencias) con el Estándar Iberoamericano. Le sigue México (sector público) con la “Ley General de Protección de Datos Personales en Posesión de Sujetos Obligados” (97 coincidencias) y Jamaica con su “Data Protection Act, 2020” (70 coincidencias).
+            Barbados con su ley de datos personales "Data Protection Act 1 2019" coincide mayoritariamente con el Estándar Iberoamericano. Le sigue México (sector público) con la "Ley General de Protección de Datos Personales en Posesión de Sujetos Obligados" y Jamaica con su "Data Protection Act, 2020". El gráfico muestra la puntuación y número de leyes que coinciden, coinciden parcialmente y no coinciden por cada país.
           </p>
           <a href="{{ relref . "comparativo-de-leyes.md" }}" class="bg-ryb text-white font-lores px-3 py-2 rounded text-lg mt-6 inline-block">Explorar datos</a>
         </div>
       </div>
-      <div class="flex flex-col md:flex-row">
+      <div class="flex flex-col lg:flex-row lg:space-x-20">
         <div class="w-full lg:w-1/2">
           <h2 class="font-lores uppercase text-2xl lg:text-4xl text-dodger">
             Chile, Bahamas y Costa Rica tienen las leyes que <span class="text-ryb">más difieren</span> del estándar
           </h2>
           <p class="mt-6">
-            La “Ley 19628 Sobre protección de la vida privada” de Chile es la que más difiere del Estándar (161 inconsistencias), le siguen Bahamas y Costa Rica (con 137 inconsistencias). Lo que permite afirmar que existen mayores casos donde las leyes de cada país no coinciden con el Estándar.
+            La "Ley 19628 Sobre protección de la vida privada" de Chile es la que más difiere del Estándar (161 no coincidencias), le siguen Bahamas y Costa Rica (con 137 no coincidencias). Lo que permite afirmar que existen mayores casos donde las leyes de cada país no coinciden con el Estándar.
           </p>
           <a href="{{ relref . "comparativo-de-leyes.md" }}" class="bg-ryb text-white font-lores px-3 py-2 rounded text-lg mt-6 inline-block">Explorar datos</a>
         </div>
-        <div class="w-full lg:w-1/2"></div>
+        <div class="w-full lg:w-1/2">
+          <iframe src="https://s3.amazonaws.com/lena.dskt.ch/map-no-coincide-bid/map-no-coincide-bid.html" frameborder=0 width="100%" height="400px"></iframe>
+        </div>
       </div>
     </div>
   </div>
@@ -160,7 +164,7 @@
             Hay <span class="text-fuchsia">desconocimiento</span> sobre lo que son los datos personales
           </h2>
           <p class="mt-6">
-            El 51% de las personas que respondieron la pregunta de “¿Le parece que compartir sus datos personales tiene más beneficios que riesgos?” con “Más riesgos que beneficios”, estuvieron de acuerdo con que su gobierno debería multar a las personas que son coronavirus positivo y no permiten la geolocalización de sus celulares. Considerar que es riesgoso compartir los datos personales pero facultar al gobierno para multar a quienes no permiten la geolocalización representa una discordancia y podría reflejar un desconocimiento de lo que son los datos personales y de las implicaciones de que el gobierno pueda exigir a sus ciudadanos entregarle esta información.
+            El 51% de las personas que respondieron la pregunta de "¿Le parece que compartir sus datos personales tiene más beneficios que riesgos?" con "Más riesgos que beneficios", estuvieron de acuerdo con que su gobierno debería multar a las personas que son coronavirus positivo y no permiten la geolocalización de sus celulares. Considerar que es riesgoso compartir los datos personales pero facultar al gobierno para multar a quienes no permiten la geolocalización representa una discordancia y podría reflejar un desconocimiento de lo que son los datos personales y de las implicaciones de que el gobierno pueda exigir a sus ciudadanos entregarle esta información.
           </p>
           <a href="{{ relref . "encuesta-a-la-ciudadania.md" }}" class="bg-fuchsia text-space-cadet font-lores px-3 py-2 rounded text-lg mt-6 inline-block">Explorar datos</a>
         </div>
@@ -184,7 +188,7 @@
             En épocas de pandemia, las personas <span class="text-fuchsia">cambian de opinión</span>
           </h2>
           <p class="mt-6">
-            El 61% de las personas que consideran más riesgoso que beneficioso compartir los datos personales, consideran que en época de pandemia, los beneficios que el gobierno puede proporcionar al recopilar sus datos y el de otras personas superan los riesgos potenciales. Esto podría reflejar un cambio de opinión con respecto a lo que se considera riesgoso o beneficioso al introducir el factor de la pandemia.
+            El 61% de las personas que consideran más riesgoso que beneficioso compartir los datos personales consideran que, en época de pandemia, los beneficios que el gobierno puede proporcionar al recopilar sus datos y el de otras personas superan los riesgos potenciales. Esto podría reflejar un cambio de opinión con respecto a lo que se considera riesgoso o beneficioso al introducir el factor de la pandemia.
           </p>
           <a href="{{ relref . "encuesta-a-la-ciudadania.md" }}" class="bg-fuchsia text-space-cadet font-lores px-3 py-2 rounded text-lg mt-6 inline-block">Explorar datos</a>
         </div>
