@@ -1,20 +1,11 @@
-<nav class="bg-space-cadet px-4 py-2 z-20 flex justify-between items-center text-white">
+<nav class="bg-space-cadet px-4 py-2 z-20 text-white relative flex flex-col items-center md:flex-row md:justify-between">
   <!---->
-  <div class="w-full flex items-center justify-between md:w-auto">
-    <a href="{{ .Site.BaseURL }}" class="flex items-baseline space-x-3">
-    </a>
-    <button class="text-white md:hidden">
-      <svg xmlns="http://www.w3.org/2000/svg" class="w-6 stroke-current" viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round">
-        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-        <line x1="4" y1="6" x2="20" y2="6" />
-        <line x1="4" y1="12" x2="20" y2="12" />
-        <line x1="4" y1="18" x2="20" y2="18" />
-      </svg>
-    </button>
-  </div>
-  <div class="hidden md:flex md:flex-row md:space-x-6">
-    <a class="px-4 py-2" href="{{.Site.BaseURL}}">Inicio</a>
-    <div class="dropdown">
+  <a href="{{ .Site.BaseURL }}" class="">
+    Logos
+  </a>
+  <div class="flex mt-4 text-sm space-x-2 md:text-base md:mt-0 md:space-x-4" id="menu-items">
+    <a class="md:px-4 py-2" href="{{.Site.BaseURL}}">Inicio</a>
+    <div class="dropdown md:px-4 py-2">
       <span class="dropdown-label">Explorador de datos</span>
       <div class="dropdown-list">
         <span class="cursor-default">Explorador de datos</span>
@@ -23,7 +14,7 @@
         <a href="{{ relref . "encuesta-a-la-ciudadania" }}" class="hover:text-caribean">Encuesta a la ciudadanía</a>
       </div>
     </div>
-    <div class="flex items-center space-x-2">
+    <div class="flex items-center space-x-1 md:space-x-2">
       <a href="" target="_blank" rel="noopener noreferrer">
         <img class="w-2/3 mx-auto" src="{{"icons/fb-white.svg"|absURL}}" alt="">
       </a>

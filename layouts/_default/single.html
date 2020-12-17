@@ -1,7 +1,14 @@
 {{ define "main" }}
-{{ if .Params.app }}
-<div class="h-screen">
-  <iframe src="{{.Params.app}}" class="w-full h-full" frameborder="0"></iframe>
+<div class="bg-space-cadet">
+  <div class="font-lores text-center uppercase max-w-lg mx-auto py-12">
+    <h2 class="text-orange text-xl md:text-2xl">Explorador de datos</h2>
+    <h1 class="text-fuchsia text-3xl md:text-5xl">{{.Title}}</h1>
+  </div>
+  {{ if .Params.app }}
+    <div class="h-screen">
+      <iframe src="{{.Params.app}}" class="w-full h-full" frameborder="0"></iframe>
+    </div>
+  {{ end }}
+  <div class="h-16 bg-contain bg-left-bottom bg-repeat-x md:h-64" style="background-image: url({{"images/bg-sky.png"|absURL}});"></div>
 </div>
-{{ end }}
 {{ end }}
