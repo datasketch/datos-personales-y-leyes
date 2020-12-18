@@ -70,7 +70,7 @@
           <a href="{{ relref . "iniciativas-de-la-pandemia.md" }}" class="bg-space-cadet text-white font-lores px-3 py-2 rounded text-lg mt-6 inline-block">Explorar datos</a>
         </div>
       </div>
-      <div class="flex flex-col lg:flex-row lg:space-x-20">
+      <div class="flex flex-col-reverse lg:flex-row lg:space-x-20">
         <div class="w-full lg:w-1/2">
           <h2 class="font-lores uppercase text-2xl lg:text-4xl">
             La iniciativa <span class="text-fuchsia">colombiana</span> es la que más derechos vulnera
@@ -129,7 +129,7 @@
           <a href="{{ relref . "comparativo-de-leyes.md" }}" class="bg-ryb text-white font-lores px-3 py-2 rounded text-lg mt-6 inline-block">Explorar datos</a>
         </div>
       </div>
-      <div class="flex flex-col lg:flex-row lg:space-x-20">
+      <div class="flex flex-col-reverse lg:flex-row lg:space-x-20">
         <div class="w-full lg:w-1/2">
           <h2 class="font-lores uppercase text-2xl lg:text-4xl text-dodger">
             Chile, Bahamas y Costa Rica tienen las leyes que <span class="text-ryb">más difieren</span> del estándar
@@ -171,7 +171,7 @@
           <a href="{{ relref . "encuesta-a-la-ciudadania.md" }}" class="bg-fuchsia text-space-cadet font-lores px-3 py-2 rounded text-lg mt-6 inline-block">Explorar datos</a>
         </div>
       </div>
-      <div class="flex flex-col lg:flex-row lg:space-x-20">
+      <div class="flex flex-col-reverse lg:flex-row lg:space-x-20">
         <div class="w-full lg:w-1/2">
           <h2 class="font-lores uppercase text-orange text-2xl lg:text-4xl">
             Algunas personas <span class="text-fuchsia">no le hallan valor</span> a sus datos personales
@@ -210,7 +210,11 @@
     <p class="text-onyx max-w-md mt-10 text-center">
       Ingresa al explorador de datos, realiza visualizaciones y descarga la información que desees con las preguntas clave y los filtros de búsqueda.
     </p>
-    <a href="{{ relref . "iniciativas-de-la-pandemia.md" }}" class="bg-space-cadet text-white font-lores px-3 py-2 rounded text-2xl mt-10">Explorar</a>
+    <div class="mt-10 flex flex-col space-y-6 items-center md:flex-row md:space-y-0 md:space-x-6">
+      <a href="{{ relref . "iniciativas-de-la-pandemia.md" }}" class="text-center bg-space-cadet text-white font-lores px-3 py-2 rounded text-2xl">Iniciativas de<br>la pandemia</a>
+      <a href="{{ relref . "comparativo-de-leyes.md" }}" class="text-center bg-space-cadet text-white font-lores px-3 py-2 rounded text-2xl">Comparativo<br>de leyes</a>
+      <a href="{{ relref . "encuesta-a-la-ciudadania.md" }}" class="text-center bg-space-cadet text-white font-lores px-3 py-2 rounded text-2xl">Encuesta a la<br>ciudadanía</a>
+    </div>
   </div>
 </div>
 {{ end }}
