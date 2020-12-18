@@ -1,4 +1,4 @@
-baseURL = "https://datasketch.github.io/datos-personales-y-leyes/"
+baseURL = "/datos-personales-y-leyes/"
 languageCode = "es"
 title = "Los datos personales y sus leyes"
 taxonomies = []
