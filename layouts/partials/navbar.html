@@ -5,15 +5,48 @@
   </a>
   <div class="flex mt-4 text-sm space-x-2 md:text-base md:mt-0 md:space-x-4" id="menu-items">
     <a class="md:px-4 py-2" href="{{.Site.BaseURL}}">Inicio</a>
-    <div class="dropdown md:px-4 py-2" role="button" tabindex="0">
-      <span class="dropdown-label">Explorador de datos</span>
-      <div class="dropdown-list">
-        <span class="cursor-default">Explorador de datos</span>
-        <a href="{{ relref . "iniciativas-de-la-pandemia" }}" class="hover:text-caribean">Iniciativas de la pandemia</a>
-        <a href="{{ relref . "comparativo-de-leyes" }}" class="hover:text-caribean">Comparativo de leyes</a>
-        <a href="{{ relref . "encuesta-a-la-ciudadania" }}" class="hover:text-caribean">Encuesta a la ciudadanía</a>
-      </div>
-    </div>
+    <details class="relative with-hover" tabindex="0" open>
+      <summary class="md:px-4 py-2">Explorador de datos</summary>
+      <ul class="text-center space-y-2 bg-space-cadet py-2 absolute top-0">
+        <li class="pb-2">Explorador de datos</li>
+        <li class="px-2">
+          <a href="{{ relref . "iniciativas-de-la-pandemia" }}" class="hover:text-caribean">
+            Iniciativas de la pandemia
+          </a>
+        </li>
+        <li class="px-2">
+          <a href="{{ relref . "comparativo-de-leyes" }}" class="hover:text-caribean">
+            Comparativo de leyes
+          </a>
+        </li>
+        <li class="px-2">
+          <a href="{{ relref . "encuesta-a-la-ciudadania" }}" class="hover:text-caribean">
+            Encuesta a la ciudadanía
+          </a>
+        </li>
+      </ul>
+    </details>
+    <details class="relative with-hover" tabindex="0" open>
+      <summary class="md:px-4 py-2">Metodología</summary>
+      <ul class="text-center space-y-2 bg-space-cadet py-2 absolute top-0">
+        <li class="pb-2">Metodología</li>
+        <li class="px-2">
+          <a href="#" class="hover:text-caribean">
+            Iniciativas de la pandemia
+          </a>
+        </li>
+        <li class="px-2">
+          <a href="#" class="hover:text-caribean">
+            Comparativo de leyes
+          </a>
+        </li>
+        <li class="px-2">
+          <a href="#" class="hover:text-caribean">
+            Encuesta a la ciudadanía
+          </a>
+        </li>
+      </ul>
+    </details>
     <div class="flex items-center space-x-1 md:space-x-2">
       <a href="" target="_blank" rel="noopener noreferrer">
         <img class="w-2/3 mx-auto" src="{{"icons/fb-white.svg"|absURL}}" alt="">
