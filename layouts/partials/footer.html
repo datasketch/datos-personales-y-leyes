@@ -1,30 +1,39 @@
-<footer class="bg-onyx px-8 py-12 text-white font-grotesk">
-  <div class="grid gap-12 md:grid-cols-2 lg:grid-cols-4 lg:gap-y-16">
-    <div>
-    </div>
-    <div>
-    </div>
-    <div class="flex flex-col items-start font-bold text-lg">
-      <a href="{{ .Site.BaseURL }}" class="hover:text-caribean">Inicio</a>
-      <a href="" class="hover:text-caribean">Iniciativas de la pandemia</a>
-      <a href="" class="hover:text-caribean">Comparativo de leyes</a>
-      <a href="" class="hover:text-caribean">Encuesta a la ciudadanía</a>
-    </div>
-    <div class="text-lg font-bold space-y-2">
-      <p>Comparte</p>
-      <div class="flex items-center space-x-4">
-        <a href="" target="_blank" rel="noopener noreferrer">
-          <img src="{{"icons/fb-white.svg"|absURL}}" alt="">
-        </a>
-        <a href="" target="_blank" rel="noopener noreferrer">
-          <img src="{{"icons/tw-white.svg"|absURL}}" alt="">
-        </a>
-        <a href="" target="_blank" rel="noopener noreferrer">
-          <img src="{{"icons/ig-white.svg"|absURL}}" alt="">
-        </a>
+<footer>
+  <div class="bg-onyx py-12 text-white font-usual">
+    <div class="w-full mx-auto px-4 lg:w-10/12">
+      <div class="flex flex-col space-y-8 lg:space-y-0 lg:flex-row lg:items-center">
+        <div class="w-full lg:w-1/4">
+          <img class="w-40" src='{{ "images/al-sur.png" | absURL }}' alt="">
+        </div>
+        <div class="w-full lg:w-1/4">
+          <img class="w-40" src='{{ "images/ilda.png" | absURL }}' alt="">
+        </div>
+        <div class="w-full lg:w-1/4"></div>
+        <div class="w-full lg:w-1/4">
+          <div class="space-y-2 font-bold text-lg">
+            <a href="{{ .Site.BaseURL }}" class="font-usual hover:text-caribean">Inicio</a><br>
+            <a href="" class="font-usual hover:text-caribean">Iniciativas de la pandemia</a><br>
+            <a href="" class="font-usual hover:text-caribean">Comparativo de leyes</a><br>
+            <a href="" class="font-usual hover:text-caribean">Encuesta a la ciudadanía</a><br>
+          </div>
+          <div class="text-lg font-bold space-y-2 mt-6 flex items-end space-x-6">
+            <p>Comparte</p>
+            <div class="flex items-center space-x-4">
+              <a href="" target="_blank" rel="noopener noreferrer">
+                <img src="{{"icons/fb-white.svg"|absURL}}" alt="">
+              </a>
+              <a href="" target="_blank" rel="noopener noreferrer">
+                <img src="{{"icons/tw-white.svg"|absURL}}" alt="">
+              </a>
+              <a href="" target="_blank" rel="noopener noreferrer">
+                <img src="{{"icons/ig-white.svg"|absURL}}" alt="">
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="max-w-lg mx-auto text-center md:col-span-2 lg:col-span-4">
+    <div class="max-w-lg mx-auto text-center mt-16">
       <img src="{{"icons/cc.svg"|absURL}}" alt="" class="block mx-auto">
       <p class="text-xs mt-3">
         Todo el material en esta página, cuando no se indique lo contrario, es
@@ -32,5 +41,8 @@
         vincúlalos y referéncialos.
       </p>
     </div>
+  </div>
+  <div class="bg-space-cadet p-4">
+    <img class="mx-auto" src='{{ "images/powered-by.svg" | absURL }}' alt="">
   </div>
 </footer>
