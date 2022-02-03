@@ -1,7 +1,7 @@
 <header class="bg-space-cadet px-8 py-6 z-20 text-white relative">
   <nav class="flex flex-col items-center md:flex-row md:justify-between">
     <a href="/">
-      <img srcset="/images/bid-logo.png 1x, /images/bid-logo@2x.png 2x" alt="logo">
+      <img src="{{ "/images/bid-logo.png" | absURL }}" alt="logo">
     </a>
     <div class="flex mt-4 text-sm space-x-2 md:text-base md:mt-0 md:space-x-4" id="menu-items">
       <a class="md:px-4 py-2 duration-300 hover:text-caribean" href="{{.Site.BaseURL}}">Inicio</a>
@@ -49,13 +49,13 @@
       </details>
       <div class="flex items-center space-x-1 md:space-x-2">
         <a href="" target="_blank" rel="noopener noreferrer">
-          <img class="w-2/3 mx-auto" src="/icons/fb-white.svg" alt="social media">
+          <img class="w-2/3 mx-auto" src="{{ "/icons/fb-white.svg" | absURL }}" alt="social media">
         </a>
         <a href="" target="_blank" rel="noopener noreferrer">
-          <img class="w-2/3 mx-auto" src="/icons/tw-white.svg" alt="social media">
+          <img class="w-2/3 mx-auto" src="{{ "/icons/tw-white.svg" | absURL }}" alt="social media">
         </a>
         <a href="" target="_blank" rel="noopener noreferrer">
-          <img class="w-2/3 mx-auto" src="/icons/ig-white.svg" alt="social media">
+          <img class="w-2/3 mx-auto" src="{{ "/icons/ig-white.svg" | absURL }}" alt="social media">
         </a>
       </div>
     </div>
