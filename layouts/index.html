@@ -16,7 +16,7 @@
       <div class="flex flex-col md:flex-row">
         <div class="w-full lg:w-1/2">
           <h2 class="font-lores uppercase text-fuchsia text-3xl lg:text-5xl xl:text-6xl">
-            Por qué este proyecto <img class="inline-block" src="/icons/lock.svg" alt="lock icon">
+            Por qué este proyecto <img class="inline-block" src="{{ "/icons/lock.svg" | absURL }}" alt="lock icon">
           </h2>
           <p class="mt-6 max-w-md">
             Este proyecto surge como una iniciativa para disponibilizar varios análisis ya realizados sobre las leyes de
@@ -32,7 +32,7 @@
         <div class="w-full lg:w-1/2"></div>
         <div class="w-full lg:w-1/2">
           <h2 class="font-lores uppercase text-orange text-3xl lg:text-5xl xl:text-6xl">
-            Qué son <span class="lg:block">los datos personales <img class="inline-block w-12" src="/icons/dots.svg"
+            Qué son <span class="lg:block">los datos personales <img class="inline-block w-12" src="{{ "/icons/dots.svg" | absURL }}"
                 alt="dot icon"></span>
           </h2>
           <p class="mt-6 max-w-md">
@@ -167,7 +167,7 @@
     <div class="flex flex-col items-start space-y-32">
       <div class="flex flex-col lg:flex-row lg:space-x-20">
         <div class="w-full lg:w-1/2">
-          <iframe class="w-full h-96" src="/charts/coincide-map.html" frameborder="0"></iframe>
+          <iframe class="w-full h-96" src="{{ "/charts/coincide-map.html" | absURL }}" frameborder="0"></iframe>
         </div>
         <div class="w-full lg:w-1/2">
           <h2 class="font-lores uppercase text-2xl lg:text-4xl text-dodger">
@@ -197,7 +197,7 @@
             class="bg-ryb text-white font-lores px-3 py-2 rounded text-lg mt-6 inline-block">Explorar datos</a>
         </div>
         <div class="w-full lg:w-1/2">
-          <iframe class="w-full h-96" src="/charts/no-coincide-map.html" frameborder="0"></iframe>
+          <iframe class="w-full h-96" src="{{ "/charts/no-coincide-map.html" | absURL }}" frameborder="0"></iframe>
         </div>
       </div>
     </div>
