@@ -1,4 +1,4 @@
-baseURL = "/bid/datos-personales-y-leyes/"
+baseURL = "https://www.datasketch.co/bid/datos-personales-y-leyes/"
 languageCode = "es"
 title = "Los datos personales y sus leyes"
 taxonomies = []
