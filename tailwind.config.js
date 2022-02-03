@@ -12,6 +12,7 @@ module.exports = {
         onyx: '#212135',
         orange: '#f6650f',
         ryb: '#fb361d',
+        'gemstone-green': '#54EBC5',
       },
       fontFamily: {
         usual: ['usual', 'sans-serif'],

@@ -1,45 +1,46 @@
 @tailwind base;
 @tailwind components;
-
-.dropdown {
-  @apply relative cursor-pointer;
-}
-
-.dropdown:hover .dropdown-label {
-  @apply opacity-0;
-}
-
-.dropdown:hover .dropdown-list {
-  @apply flex;
-}
-
-.dropdown-list {
-  @apply absolute w-full hidden flex-col border border-white left-0 leading-tight text-center py-2 top-0;
-}
-
-.dropdown-list > * ~ * {
-  @apply mt-3;
-}
-
-details {
-  @apply relative;
-}
-details > summary {
-  @apply cursor-pointer list-none select-none;
-}
-details > summary:focus {
-  @apply outline-none;
-}
-details > summary::-webkit-details-marker {
-  @apply hidden;
-}
-
-details.with-hover ul {
-  @apply hidden;
-}
-
-details.with-hover:hover ul {
-  @apply block;
-}
-
 @tailwind utilities;
+
+@layer components {
+  .dropdown {
+    @apply relative cursor-pointer;
+  }
+
+  .dropdown:hover .dropdown-label {
+    @apply opacity-0;
+  }
+
+  .dropdown:hover .dropdown-list {
+    @apply flex;
+  }
+
+  .dropdown-list {
+    @apply absolute w-full hidden flex-col border border-white left-0 leading-tight text-center py-2 top-0;
+  }
+
+  .dropdown-list > * ~ * {
+    @apply mt-3;
+  }
+
+  details {
+    @apply relative;
+  }
+  details > summary {
+    @apply cursor-pointer list-none select-none;
+  }
+  details > summary:focus {
+    @apply outline-none;
+  }
+  details > summary::-webkit-details-marker {
+    @apply hidden;
+  }
+
+  details.with-hover ul {
+    @apply hidden;
+  }
+
+  details.with-hover:hover ul {
+    @apply block;
+  }
+}
