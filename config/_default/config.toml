@@ -1,4 +1,5 @@
 baseURL = "/"
 languageCode = "es"
+defaultContentLanguage = 'es'
 title = "Los datos personales y sus leyes"
 taxonomies = []

@@ -1,0 +1,13 @@
+{{ define "main" }}
+<div class="bg-space-cadet px-4">
+  <div class="font-lores text-center max-w-lg mx-auto py-12">
+    <img class="mx-auto" src="{{ .Params.image }}" alt="{{ .Title }}">
+    <h1 class="text-fuchsia text-3xl md:text-5xl uppercase mt-4">{{.Title}}</h1>
+  </div>
+  <div class="mx-auto pt-4 pb-12 text-white space-y-8 text-center max-w-3xl">
+    {{ .Content }}
+    <a href="#" class="bg-ryb text-white font-lores px-3 py-2 rounded text-lg inline-block">{{ .Params.url_name }}</a>
+  </div>
+  <div class="h-16 bg-contain bg-left-bottom bg-repeat-x md:h-64" style="background-image: url({{"images/bg-sky.png"|absURL}});"></div>
+</div>
+{{ end }}
