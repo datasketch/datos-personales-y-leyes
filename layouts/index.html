@@ -1,9 +1,10 @@
 {{ define "main" }}
 <div class="bg-space-cadet text-white">
-  <div class="pt-16">
+  <div class="h-16 bg-contain bg-left-bottom bg-repeat-x md:h-64" style="background-image: url({{"images/bg-sky.png"|absURL}});"></div>
+  <div class="pt-24">
     <div class="mx-auto w-11/12 lg:grid lg:place-items-center">
       <h1 class="font-lores uppercase text-fuchsia text-3xl sm:text-4xl md:text-5xl lg:text-6xl 2xl:text-7xl">
-        Los datos personales <span class="block text-orange">y sus leyes</span>
+        Los datos personales <span class="block text-orange">y sus leyes <img class="inline-block" src="{{ "icons/title-key.svg" | absURL }}" alt="title key"></span>
       </h1>
       <p class="lg:text-center mt-20 max-w-2xl mx-auto">
         Datos como nuestro domicilio, correo electrónico o localización pertenecen a nuestra intimidad; si están en las
@@ -58,6 +59,71 @@
           </p>
         </div>
         <div class="w-full lg:w-1/2"></div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--Comparando las leyes-->
+<div class="bg-lavender py-32 px-4 text-onyx">
+  <img src="{{ "images/compara.svg" | absURL }}" alt="compara" class="mx-auto">
+  <h2 class="mt-6 text-center font-lores text-ryb uppercase text-3xl lg:text-5xl xl:text-6xl">
+    Comparando<br>las leyes
+  </h2>
+  <p class="text-center max-w-4xl mx-auto mt-10">
+    Este análisis de carácter normativo tiene por objetivo revisar cuál es el grado de avance de las leyes de datos
+    personales entre los miembros del BID. A partir de los ejes temáticos de los <a class="underline"
+      href="https://nam02.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.redipd.org%2Fes%2Fdocumentos%2Festandares-iberoamericanos&data=04%7C01%7CEVELYNM%40iadb.org%7C866888898b514583cce808d9dc1a4385%7C9dfb1a055f1d449a896062abcb479e7d%7C0%7C0%7C637782827674631272%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000&sdata=J9YL1cDO1nVODpCrhaBH5JMj6hyq%2FsHkZlP2oS%2BikHM%3D&reserved=0"
+      target="_blank">Estándares
+      de protección de datos
+      personales</a> para los estados iberoamericanos se identifica qué leyes de la región regulan esos ejes temáticos.
+    De la investigación realizada se detectaron 12 países con leyes de protección de datos personales vigentes:
+    Argentina, Bahamas, Brasil, Colombia, Costa Rica, Ecuador, México (con dos leyes), Nicaragua, Panamá, Perú, Trinidad
+    y Tobago y Uruguay. Tanto Barbados como Jamaica si bien cuenta con una ley aprobada en el parlamento, ambas están
+    pendientes de promulgación y, por lo tanto, también pendientes de entrar en vigor. Si bien Chile posee una ley de
+    privacidad que, parcialmente, regula una serie de componentes en materia de datos personales, no se trata de una
+    legislación especializada en la materia. Por otro lado, República Dominicana cuenta con una legislación de alcance
+    sectorial, por lo que no se califica como una legislación transversal en el tema.
+
+  </p>
+  <div class="max-w-7xl mx-auto mt-10">
+    <iframe class="w-full" height="600px" src="{{ "charts/heatmap-summary.html" | absURL }}" frameborder="0"></iframe>
+  </div>
+  <div class="mx-auto mt-32 w-full md:w-10/12">
+    <div class="flex flex-col items-start space-y-32">
+      <div class="flex flex-col lg:flex-row lg:space-x-20">
+        <div class="w-full lg:w-1/2">
+          <iframe class="w-full h-96" src="{{ "charts/coincide-map.html" | absURL }}" frameborder="0"></iframe>
+        </div>
+        <div class="w-full lg:w-1/2">
+          <h2 class="font-lores uppercase text-2xl lg:text-4xl text-dodger">
+            Barbados, México y Ecuador tienen las leyes que <span class="text-ryb">más se
+              ajustan</span> al estándar
+          </h2>
+          <p class="mt-6">
+            Barbados con su ley de datos personales "Data Protection Act" es el país que más coincide con el Estándar
+            Iberoamericano. Le sigue México con la "Ley General de Protección de Datos Personales en Posesión de Sujetos
+            Obligados" y Ecuador con su "Ley Orgánica de Protección de Datos Personales". El gráfico muestra la
+            puntuación y número de leyes que coinciden, coinciden parcialmente y no coinciden por cada país.
+          </p>
+          <a href="{{ relref . "comparativo-de-leyes.md" }}"
+            class="bg-ryb text-white font-lores px-3 py-2 rounded text-lg mt-6 inline-block">Explorar datos</a>
+        </div>
+      </div>
+      <div class="flex flex-col-reverse lg:flex-row lg:space-x-20">
+        <div class="w-full lg:w-1/2">
+          <h2 class="font-lores uppercase text-2xl lg:text-4xl text-dodger">
+            Chile, Bahamas y Costa Rica tienen las leyes que <span class="text-ryb">más difieren</span> del estándar
+          </h2>
+          <p class="mt-6">
+            La "Ley 19628 Sobre protección de la vida privada" de Chile es la que más difiere del Estándar (161 no
+            coincidencias), le siguen Bahamas y Costa Rica (con 137 no coincidencias cada uno).
+          </p>
+          <a href="{{ relref . "comparativo-de-leyes.md" }}"
+            class="bg-ryb text-white font-lores px-3 py-2 rounded text-lg mt-6 inline-block">Explorar datos</a>
+        </div>
+        <div class="w-full lg:w-1/2">
+          <iframe class="w-full h-96" src="{{ "charts/no-coincide-map.html" | absURL }}" frameborder="0"></iframe>
+        </div>
       </div>
     </div>
   </div>
@@ -138,71 +204,6 @@
     </div>
   </div>
 </div>
-<!--Comparando las leyes-->
-<div class="bg-lavender py-32 px-4 text-onyx">
-  <img src="{{ "images/compara.svg" | absURL }}" alt="compara" class="mx-auto">
-  <h2 class="mt-6 text-center font-lores text-ryb uppercase text-3xl lg:text-5xl xl:text-6xl">
-    Comparando<br>las leyes
-  </h2>
-  <p class="text-center max-w-4xl mx-auto mt-10">
-    Este análisis de carácter normativo tiene por objetivo revisar cuál es el grado de avance de las leyes de datos
-    personales entre los miembros del BID. A partir de los ejes temáticos de los <a class="underline"
-      href="https://nam02.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.redipd.org%2Fes%2Fdocumentos%2Festandares-iberoamericanos&data=04%7C01%7CEVELYNM%40iadb.org%7C866888898b514583cce808d9dc1a4385%7C9dfb1a055f1d449a896062abcb479e7d%7C0%7C0%7C637782827674631272%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000&sdata=J9YL1cDO1nVODpCrhaBH5JMj6hyq%2FsHkZlP2oS%2BikHM%3D&reserved=0"
-      target="_blank">Estándares
-      de protección de datos
-      personales</a> para los estados iberoamericanos se identifica qué leyes de la región regulan esos ejes temáticos.
-    De la investigación realizada se detectaron 12 países con leyes de protección de datos personales vigentes:
-    Argentina, Bahamas, Brasil, Colombia, Costa Rica, Ecuador, México (con dos leyes), Nicaragua, Panamá, Perú, Trinidad
-    y Tobago y Uruguay. Tanto Barbados como Jamaica si bien cuenta con una ley aprobada en el parlamento, ambas están
-    pendientes de promulgación y, por lo tanto, también pendientes de entrar en vigor. Si bien Chile posee una ley de
-    privacidad que, parcialmente, regula una serie de componentes en materia de datos personales, no se trata de una
-    legislación especializada en la materia. Por otro lado, República Dominicana cuenta con una legislación de alcance
-    sectorial, por lo que no se califica como una legislación transversal en el tema.
-
-  </p>
-  <div class="max-w-7xl mx-auto mt-10">
-    <iframe class="w-full" height="600px" src="{{ "charts/heatmap-summary.html" | absURL }}" frameborder="0"></iframe>
-  </div>
-  <div class="mx-auto mt-32 w-full md:w-10/12">
-    <div class="flex flex-col items-start space-y-32">
-      <div class="flex flex-col lg:flex-row lg:space-x-20">
-        <div class="w-full lg:w-1/2">
-          <iframe class="w-full h-96" src="{{ "charts/coincide-map.html" | absURL }}" frameborder="0"></iframe>
-        </div>
-        <div class="w-full lg:w-1/2">
-          <h2 class="font-lores uppercase text-2xl lg:text-4xl text-dodger">
-            Barbados, México y Ecuador tienen las leyes que <span class="text-ryb">más se
-              ajustan</span> al estándar
-          </h2>
-          <p class="mt-6">
-            Barbados con su ley de datos personales "Data Protection Act" es el país que más coincide con el Estándar
-            Iberoamericano. Le sigue México con la "Ley General de Protección de Datos Personales en Posesión de Sujetos
-            Obligados" y Ecuador con su "Ley Orgánica de Protección de Datos Personales". El gráfico muestra la
-            puntuación y número de leyes que coinciden, coinciden parcialmente y no coinciden por cada país.
-          </p>
-          <a href="{{ relref . "comparativo-de-leyes.md" }}"
-            class="bg-ryb text-white font-lores px-3 py-2 rounded text-lg mt-6 inline-block">Explorar datos</a>
-        </div>
-      </div>
-      <div class="flex flex-col-reverse lg:flex-row lg:space-x-20">
-        <div class="w-full lg:w-1/2">
-          <h2 class="font-lores uppercase text-2xl lg:text-4xl text-dodger">
-            Chile, Bahamas y Costa Rica tienen las leyes que <span class="text-ryb">más difieren</span> del estándar
-          </h2>
-          <p class="mt-6">
-            La "Ley 19628 Sobre protección de la vida privada" de Chile es la que más difiere del Estándar (161 no
-            coincidencias), le siguen Bahamas y Costa Rica (con 137 no coincidencias cada uno).
-          </p>
-          <a href="{{ relref . "comparativo-de-leyes.md" }}"
-            class="bg-ryb text-white font-lores px-3 py-2 rounded text-lg mt-6 inline-block">Explorar datos</a>
-        </div>
-        <div class="w-full lg:w-1/2">
-          <iframe class="w-full h-96" src="{{ "charts/no-coincide-map.html" | absURL }}" frameborder="0"></iframe>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
 <!--Qué piensa la ciudadanía-->
 <div class="bg-space-cadet text-white py-32 px-4">
   <img class="mx-auto" src="{{ "images/ciudadania.svg" | absURL }}" alt="ciudadania">
@@ -262,6 +263,27 @@
         <div class="w-full lg:w-1/2">
           <iframe src="{{ "https://s3.amazonaws.com/lena.dskt.ch/sankey-p34-p36-1-bid/sankey-p34-p36-1-bid.html" | absURL }}"
             frameborder=0 width="100%" height="400px"></iframe>
+        </div>
+      </div>
+      <div class="flex flex-col lg:flex-row lg:space-x-20">
+        <div class="w-full lg:w-1/2">
+          <iframe src="https://s3.amazonaws.com/lena.dskt.ch/sankey-p31-p36-1-bid/sankey-p31-p36-1-bid.html"
+            frameborder=0 width="100%" height="400px"></iframe>
+        </div>
+        <div class="w-full lg:w-1/2">
+          <h2 class="font-lores uppercase text-orange text-2xl lg:text-4xl">
+            En épocas de pandemia, las personas <span class="text-fuchsia">cambian de opinión</span>
+          </h2>
+          <p class="mt-6">
+            El 61% de las personas que consideran "más riesgos” a la pregunta "¿Le parece que compartir sus datos
+            personales tiene más beneficios que riesgos?” (eje de la izquierda) también consideran que hay beneficios a
+            la pregunta "¿El gobierno puede proporcionar beneficios al recopilar sus datos y el de otras personas para
+            superar los riesgos potenciales en épocas de pandemia?” (eje de la derecha). Esto podría reflejar un cambio
+            de opinión con respecto a lo que se considera riesgoso o beneficioso al introducir el factor de la pandemia.
+          </p>
+          <a href="{{ relref . " encuesta-a-la-ciudadania.md" }}"
+            class="bg-fuchsia text-space-cadet font-lores px-3 py-2 rounded text-lg mt-6 inline-block">Explorar
+            datos</a>
         </div>
       </div>
     </div>
