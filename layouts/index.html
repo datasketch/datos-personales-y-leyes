@@ -4,26 +4,20 @@
   <div class="pt-24">
     <div class="mx-auto w-11/12 lg:grid lg:place-items-center">
       <h1 class="font-lores uppercase text-fuchsia text-3xl sm:text-4xl md:text-5xl lg:text-6xl 2xl:text-7xl">
-        Los datos personales <span class="block text-orange">y sus leyes <img class="inline-block" src="{{ "icons/title-key.svg" | absURL }}" alt="title key"></span>
+        {{ T "home_label_personal_data_and_its_laws_title" | safeHTML }} <img class="inline-block" src="{{ "icons/title-key.svg" | absURL }}" alt="title key"></span>
       </h1>
       <p class="lg:text-center mt-20 max-w-2xl mx-auto">
-        Datos como nuestro domicilio, correo electrónico o localización pertenecen a nuestra intimidad; si están en las
-        manos equivocadas, pueden perjudicarnos personalmente y como sociedad. Por eso, este proyecto busca analizar las
-        distintas leyes e iniciativas de datos personales en América Latina y contrastarlas con los estándares que se
-        han adoptado internacionalmente.
+        {{ T "home_label_personal_data_and_its_laws_description" }}
       </p>
     </div>
     <div class="py-32 w-full px-4 mx-auto flex flex-col space-y-32 lg:w-10/12">
       <div class="flex flex-col md:flex-row">
         <div class="w-full lg:w-1/2">
           <h2 class="font-lores uppercase text-fuchsia text-3xl lg:text-5xl xl:text-6xl">
-            Por qué este proyecto <img class="inline-block" src="{{ "icons/lock.svg" | absURL }}" alt="lock icon">
+            {{ T "home_label_why_this_project_title" | safeHTML }} <img class="inline-block" src="{{ "icons/lock.svg" | absURL }}" alt="lock icon">
           </h2>
           <p class="mt-6 max-w-md">
-            Este proyecto surge como una iniciativa para disponibilizar varios análisis ya realizados sobre las leyes de
-            protección de datos personales en países de América Latina, que incluyen distintos cuestionamientos que la
-            ciudadanía y la sociedad civil se puede hacer constantemente sobre este tema y puede resolver con datos
-            abiertos disponibles para su uso.
+            {{ T "home_label_why_this_project_description" }}
           </p>
         </div>
         <div class="w-full lg:w-1/2"></div>
@@ -33,13 +27,11 @@
         <div class="w-full lg:w-1/2"></div>
         <div class="w-full lg:w-1/2">
           <h2 class="font-lores uppercase text-orange text-3xl lg:text-5xl xl:text-6xl">
-            Qué son <span class="lg:block">los datos personales <img class="inline-block w-12" src="{{ "icons/dots.svg" | absURL }}"
+            {{ T "home_label_what_is_personal_data_title" | safeHTML }} <img class="inline-block w-12" src="{{ "icons/dots.svg" | absURL }}"
                 alt="dot icon"></span>
           </h2>
           <p class="mt-6 max-w-md">
-            Es aquella información que sirve para identificar de forma directa o indirecta a una persona, es decir,
-            indica de qué persona se trata (como el nombre o número de identificación), o da pistas sobre la identidad
-            de la misma, por ejemplo su dirección de residencia.
+            {{ T "home_label_what_is_personal_data_description" }}
           </p>
         </div>
       </div>
@@ -47,15 +39,12 @@
       <div class="flex flex-col md:flex-row">
         <div class="w-full lg:w-1/2">
           <h2 class="font-lores uppercase text-caribean text-3xl lg:text-5xl xl:text-6xl">
-            Qué leyes <span class="lg:block">se analizan</span> <span class="lg:block">aquí <img
-                class="inline-block w-8" src="{{ "icons/at.svg" | absURL }}" alt="at icon"></span>
+            {{ T "home_label_which_laws_are_analized_here_title" | safeHTML }}
+            <img
+                class="inline-block w-8" src="{{ "icons/at.svg" | absURL }}" alt="at icon">
           </h2>
           <p class="mt-6 max-w-md">
-            Este proyecto analiza las leyes de protección de datos personales de distintos países de América Latina,
-            entre los que se encuentran Argentina, Bolivia, Brasil, Chile, Colombia, Costa Rica, Ecuador, México,
-            Panamá, Paraguay, Perú y Uruguay, determinando las coincidencias con el Estándar Iberoamericano de
-            Protección de Datos, las iniciativas en torno a datos impulsadas en la pandemia por COVID 19, y lo que
-            piensan sus ciudadanos del tratamiento de los datos personales.
+            {{ T "home_label_which_laws_are_analized_here_description" }}
           </p>
         </div>
         <div class="w-full lg:w-1/2"></div>
@@ -67,23 +56,10 @@
 <div class="bg-lavender py-32 px-4 text-onyx">
   <img src="{{ "images/compara.svg" | absURL }}" alt="compara" class="mx-auto">
   <h2 class="mt-6 text-center font-lores text-ryb uppercase text-3xl lg:text-5xl xl:text-6xl">
-    Comparando<br>las leyes
+    {{ T "home_label_comparing_the_laws_title" | safeHTML }}
   </h2>
   <p class="text-center max-w-4xl mx-auto mt-10">
-    Este análisis de carácter normativo tiene por objetivo revisar cuál es el grado de avance de las leyes de datos
-    personales entre los miembros del BID. A partir de los ejes temáticos de los <a class="underline"
-      href="https://nam02.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.redipd.org%2Fes%2Fdocumentos%2Festandares-iberoamericanos&data=04%7C01%7CEVELYNM%40iadb.org%7C866888898b514583cce808d9dc1a4385%7C9dfb1a055f1d449a896062abcb479e7d%7C0%7C0%7C637782827674631272%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000&sdata=J9YL1cDO1nVODpCrhaBH5JMj6hyq%2FsHkZlP2oS%2BikHM%3D&reserved=0"
-      target="_blank">Estándares
-      de protección de datos
-      personales</a> para los estados iberoamericanos se identifica qué leyes de la región regulan esos ejes temáticos.
-    De la investigación realizada se detectaron 12 países con leyes de protección de datos personales vigentes:
-    Argentina, Bahamas, Brasil, Colombia, Costa Rica, Ecuador, México (con dos leyes), Nicaragua, Panamá, Perú, Trinidad
-    y Tobago y Uruguay. Tanto Barbados como Jamaica si bien cuenta con una ley aprobada en el parlamento, ambas están
-    pendientes de promulgación y, por lo tanto, también pendientes de entrar en vigor. Si bien Chile posee una ley de
-    privacidad que, parcialmente, regula una serie de componentes en materia de datos personales, no se trata de una
-    legislación especializada en la materia. Por otro lado, República Dominicana cuenta con una legislación de alcance
-    sectorial, por lo que no se califica como una legislación transversal en el tema.
-
+    {{ T "home_label_comparing_the_laws_description" | safeHTML }}
   </p>
   <div class="max-w-7xl mx-auto mt-10">
     <iframe class="w-full" height="600px" src="{{ "charts/heatmap-summary.html" | absURL }}" frameborder="0"></iframe>
@@ -96,30 +72,25 @@
         </div>
         <div class="w-full lg:w-1/2">
           <h2 class="font-lores uppercase text-2xl lg:text-4xl text-dodger">
-            Barbados, México y Ecuador tienen las leyes que <span class="text-ryb">más se
-              ajustan</span> al estándar
+            {{ T "home_label_barbados_mexico_ecuador_title" | safeHTML }}
           </h2>
           <p class="mt-6">
-            Barbados con su ley de datos personales "Data Protection Act" es el país que más coincide con el Estándar
-            Iberoamericano. Le sigue México con la "Ley General de Protección de Datos Personales en Posesión de Sujetos
-            Obligados" y Ecuador con su "Ley Orgánica de Protección de Datos Personales". El gráfico muestra la
-            puntuación y número de leyes que coinciden, coinciden parcialmente y no coinciden por cada país.
+            {{ T "home_label_barbados_mexico_ecuador_description" }}
           </p>
           <a href="{{ relref . "comparativo-de-leyes.md" }}"
-            class="bg-ryb text-white font-lores px-3 py-2 rounded text-lg mt-6 inline-block">Explorar datos</a>
+            class="bg-ryb text-white font-lores px-3 py-2 rounded text-lg mt-6 inline-block">{{ T "label_explore_data" }}</a>
         </div>
       </div>
       <div class="flex flex-col-reverse lg:flex-row lg:space-x-20">
         <div class="w-full lg:w-1/2">
           <h2 class="font-lores uppercase text-2xl lg:text-4xl text-dodger">
-            Chile, Bahamas y Costa Rica tienen las leyes que <span class="text-ryb">más difieren</span> del estándar
+            {{ T "home_label_chile_bahamas_costa_rica_title" | safeHTML }}
           </h2>
           <p class="mt-6">
-            La "Ley 19628 Sobre protección de la vida privada" de Chile es la que más difiere del Estándar (161 no
-            coincidencias), le siguen Bahamas y Costa Rica (con 137 no coincidencias cada uno).
+            {{ T "home_label_chile_bahamas_costa_rica_description" }}
           </p>
           <a href="{{ relref . "comparativo-de-leyes.md" }}"
-            class="bg-ryb text-white font-lores px-3 py-2 rounded text-lg mt-6 inline-block">Explorar datos</a>
+            class="bg-ryb text-white font-lores px-3 py-2 rounded text-lg mt-6 inline-block">{{ T "label_explore_data" }}</a>
         </div>
         <div class="w-full lg:w-1/2">
           <iframe class="w-full h-96" src="{{ "charts/no-coincide-map.html" | absURL }}" frameborder="0"></iframe>
@@ -131,18 +102,11 @@
 <!--Las iniciativas de la pandemia -->
 <div class="bg-gemstone-green py-32 px-4 text-space-cadet">
   <img src="{{ "images/iniciativa.svg" | absURL }}" alt="initiative" class="mx-auto">
-  <h2 class="mt-6 text-center font-lores uppercase text-3xl lg:text-5xl xl:text-6xl">
-    Las iniciativas<br>de la pandemia
+  <h2 class="mt-6 text-center font-lores uppercase text-3xl lg:text-5xl xl:text-6xl mx-auto max-w-2xl">
+    {{ T "home_label_pandemic_initiatives_title" }}
   </h2>
   <p class="text-center max-w-3xl mx-auto mt-10">
-    Mapea algunas de las tecnologías digitales implementadas por los gobiernos de América Latina destinadas a recopilar
-    información de la población en el contexto del COVID-19 y las analiza desde el punto de vista de derechos digitales.
-    La propuesta metodológica contempló tanto el levantamiento de datos cuantitativos, como un análisis cualitativo
-    orientado a sistematizar información atingente a la implementación de soluciones tecnológicas como parte de las
-    políticas públicas y prácticas estatales en contexto de pandemia.
-    La evaluación más detallada se encuentra disponible en el <a class="underline"
-      href="https://nam02.safelinks.protection.outlook.com/?url=https%3A%2F%2Fcovid.alsur.lat%2Fes%2F&data=04%7C01%7CEVELYNM%40iadb.org%7C866888898b514583cce808d9dc1a4385%7C9dfb1a055f1d449a896062abcb479e7d%7C0%7C0%7C637782827674631272%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000&sdata=v3xHrNY7uRI2tDHol8XSEXVSaBevNRt2sGLbFiKrCKM%3D&reserved=0"
-      target="_blank">Observatorio COVID-19 AlSur</a>
+    {{ T "home_label_pandemic_initiatives_description" | safeHTML }}
   </p>
   <div class="mx-auto mt-32 w-full md:w-10/12">
     <div class="flex flex-col items-start space-y-32">
@@ -152,17 +116,13 @@
         </div>
         <div class="w-full lg:w-1/2">
           <h2 class="font-lores uppercase text-2xl lg:text-4xl">
-            Los derechos a la <span class="text-fuchsia">protección de datos personales</span> y a la <span
-              class="text-fuchsia">privacidad</span> son los más afectados
+            {{ T "home_label_the_rights_to_protection_title" | safeHTML }}
           </h2>
           <p class="mt-6">
-            Según las organizaciones evaluadoras, las 12 iniciativas analizadas en este estudio vulneran el derecho a la
-            protección de los datos personales y, de esas, 11 vulneran el derecho a la privacidad también. El derecho al
-            acceso a la información y los derechos a la libertad de circulación y a la salud son vulnerados por 8 y 6
-            iniciativas, respectivamente.
+            {{ T "home_label_the_rights_to_protection_description" }}
           </p>
           <a href="{{ relref . "iniciativas-de-la-pandemia.md" }}"
-            class="bg-space-cadet text-white font-lores px-3 py-2 rounded text-lg mt-6 inline-block">Explorar datos</a>
+            class="bg-space-cadet text-white font-lores px-3 py-2 rounded text-lg mt-6 inline-block">{{ T "label_explore_data" }}</a>
         </div>
       </div>
       <!-- <div class="flex flex-col-reverse lg:flex-row lg:space-x-20">
@@ -177,7 +137,7 @@
             tus manos (Perú) son las que menos derechos vulneran (3 derechos).
           </p>
           <a href="{{ relref . "iniciativas-de-la-pandemia.md" }}"
-            class="bg-space-cadet text-white font-lores px-3 py-2 rounded text-lg mt-6 inline-block">Explorar datos</a>
+            class="bg-space-cadet text-white font-lores px-3 py-2 rounded text-lg mt-6 inline-block">{{ T "label_explore_data" }}</a>
         </div>
         <div class="w-full lg:w-1/2">
           <iframe class="w-full" height="400px" src="{{ "charts/evaluacion.html" | absURL }}" frameborder="0"></iframe>
@@ -189,16 +149,13 @@
         </div>
         <div class="w-full lg:w-1/2">
           <h2 class="font-lores uppercase text-2xl lg:text-4xl">
-            Solo <span class="text-fuchsia">tres</span> iniciativas contemplan mecanismos de <span
-              class="text-fuchsia">evaluación</span> o <span class="text-fuchsia">auditoría externa</span>
+              {{ T "home_label_only_three_initiatives_title" | safeHTML }}
           </h2>
           <p class="mt-6">
-            Según el análisis realizado, solo las iniciativas de Colombia, Ecuador y Uruguay contemplan algún mecanismo
-            de evaluación o auditoría técnica externa. De la iniciativa de Brasil no se tiene información sobre este
-            aspecto y los demás países no contemplaron estos mecanismos de auditoría.
+            {{ T "home_label_only_three_initiatives_description" }}
           </p>
           <a href="{{ relref . "iniciativas-de-la-pandemia.md" }}"
-            class="bg-space-cadet text-white font-lores px-3 py-2 rounded text-lg mt-6 inline-block">Explorar datos</a>
+            class="bg-space-cadet text-white font-lores px-3 py-2 rounded text-lg mt-6 inline-block">{{ T "label_explore_data" }}</a>
         </div>
       </div>
     </div>
@@ -207,18 +164,11 @@
 <!--Qué piensa la ciudadanía-->
 <div class="bg-space-cadet text-white py-32 px-4">
   <img class="mx-auto" src="{{ "images/ciudadania.svg" | absURL }}" alt="ciudadania">
-  <h2 class="mt-6 text-center font-lores text-fuchsia uppercase text-3xl lg:text-5xl xl:text-6xl">
-    ¿Qué piensa<br>la ciudadanía?
+  <h2 class="mt-6 text-center font-lores text-fuchsia uppercase text-3xl lg:text-5xl xl:text-6xl mx-auto max-w-xl">
+    {{ T "home_label_what_do_citizens_think_title" }}
   </h2>
   <p class="text-center max-w-2xl mx-auto mt-10">
-    Como parte del estudio <a class="underline"
-      href="https://nam02.safelinks.protection.outlook.com/?url=https%3A%2F%2Fpublications.iadb.org%2Fpublications%2Fspanish%2Fdocument%2FServicios-publicos-y-gobierno-digital-durante-la-pandemia-Perspectivas-de-los-ciudadanos-los-funcionarios-y-las-instituciones-publicas.pdf&data=04%7C01%7CEVELYNM%40iadb.org%7C866888898b514583cce808d9dc1a4385%7C9dfb1a055f1d449a896062abcb479e7d%7C0%7C0%7C637782827674631272%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000&sdata=lKVwlPcDgWGDGay24uyzCrxvGlw3DJSzE6%2Bg835UJJM%3D&reserved=0"
-      target="_blank">“Servicios públicos y gobierno digital durante la pandemia perspectivas de los ciudadanos,
-      los funcionarios y las instituciones públicas”</a> se realizó una encuesta telefónica representativa a nivel
-    nacional
-    entre julio y agosto de 2020 a 10,207 ciudadanos adultos de Chile, Costa Rica, Ecuador, El Salvador, Honduras,
-    México, Panamá, Paraguay, Perú y Uruguay. La encuesta incluyó un conjunto limitado de preguntas sobre trámites antes
-    y durante la pandemia, perspectivas a futuro y opinión de los ciudadanos sobre datos personales.
+    {{ T "home_label_what_do_citizens_think_description" | safeHTML }}
   </p>
   <div class="mx-auto mt-32 w-full md:w-10/12">
     <div class="flex flex-col items-start space-y-32">
@@ -229,36 +179,25 @@
         </div>
         <div class="w-full lg:w-1/2">
           <h2 class="font-lores uppercase text-orange text-2xl lg:text-4xl">
-            Hay <span class="text-fuchsia">desconocimiento</span> sobre lo que son los datos personales
+              {{ T "home_label_there_is_a_lack_of_knowledge_title" | safeHTML }}
           </h2>
           <p class="mt-6">
-            El 51% de las personas que respondieron la pregunta de "¿Le parece que compartir sus datos personales tiene
-            más beneficios que riesgos?" con "Más riesgos que beneficios" (eje de la izquierda), estuvieron de acuerdo
-            con la pregunta "¿El gobierno debería multar a las personas que son coronavirus positivo y no permiten la
-            geolocalización de sus celulares?” (eje de la derecha). Considerar que es riesgoso compartir los datos
-            personales pero facultar al gobierno para multar a quienes no permiten la geolocalización podría representar
-            una discordancia y reflejar un desconocimiento de los datos personales.
+            {{ T "home_label_there_is_a_lack_of_knowledge_description" }}
           </p>
           <a href="{{ relref . "encuesta-a-la-ciudadania.md" }}"
-            class="bg-fuchsia text-space-cadet font-lores px-3 py-2 rounded text-lg mt-6 inline-block">Explorar
-            datos</a>
+            class="bg-fuchsia text-space-cadet font-lores px-3 py-2 rounded text-lg mt-6 inline-block">{{ T "label_explore_data" }}</a>
         </div>
       </div>
       <div class="flex flex-col-reverse lg:flex-row lg:space-x-20">
         <div class="w-full lg:w-1/2">
           <h2 class="font-lores uppercase text-orange text-2xl lg:text-4xl">
-            Algunas personas <span class="text-fuchsia">no le hallan valor</span> a sus datos personales
+            {{ T "home_label_some_people_do_not_find_title" | safeHTML }}
           </h2>
           <p class="mt-6">
-            El 60% de quienes contestaron No a la pregunta "¿Sabe lo que hacen los gobiernos con sus datos personales?”
-            (eje de la izquierda) contestaron Sí a la pregunta "¿El gobierno puede proporcionar beneficios al recopilar
-            sus datos y el de otras personas para superar los riesgos potenciales en épocas de pandemia?” (eje de la
-            derecha). La voluntad de entregar esta información al Estado sin la necesidad de saber qué se hace con esta,
-            podría reflejar que estas personas no le hallan un valor a sus datos personales.
+            {{ T "home_label_some_people_do_not_find_description" }}
           </p>
           <a href="{{ relref . "encuesta-a-la-ciudadania.md" }}"
-            class="bg-fuchsia text-space-cadet font-lores px-3 py-2 rounded text-lg mt-6 inline-block">Explorar
-            datos</a>
+            class="bg-fuchsia text-space-cadet font-lores px-3 py-2 rounded text-lg mt-6 inline-block">{{ T "label_explore_data" }}</a>
         </div>
         <div class="w-full lg:w-1/2">
           <iframe src="{{ "https://s3.amazonaws.com/lena.dskt.ch/sankey-p34-p36-1-bid/sankey-p34-p36-1-bid.html" | absURL }}"
@@ -272,18 +211,13 @@
         </div>
         <div class="w-full lg:w-1/2">
           <h2 class="font-lores uppercase text-orange text-2xl lg:text-4xl">
-            En épocas de pandemia, las personas <span class="text-fuchsia">cambian de opinión</span>
+            {{ T "home_label_in_times_of_pandemics_title" | safeHTML }}
           </h2>
           <p class="mt-6">
-            El 61% de las personas que consideran "más riesgos” a la pregunta "¿Le parece que compartir sus datos
-            personales tiene más beneficios que riesgos?” (eje de la izquierda) también consideran que hay beneficios a
-            la pregunta "¿El gobierno puede proporcionar beneficios al recopilar sus datos y el de otras personas para
-            superar los riesgos potenciales en épocas de pandemia?” (eje de la derecha). Esto podría reflejar un cambio
-            de opinión con respecto a lo que se considera riesgoso o beneficioso al introducir el factor de la pandemia.
+            {{ T "home_label_in_times_of_pandemics_description" }}
           </p>
           <a href="{{ relref . "encuesta-a-la-ciudadania.md" }}"
-            class="bg-fuchsia text-space-cadet font-lores px-3 py-2 rounded text-lg mt-6 inline-block">Explorar
-            datos</a>
+            class="bg-fuchsia text-space-cadet font-lores px-3 py-2 rounded text-lg mt-6 inline-block">{{ T "label_explore_data" }}</a>
         </div>
       </div>
     </div>
@@ -293,21 +227,18 @@
 <div class="bg-gemstone-green px-4 py-32">
   <div class="flex flex-col items-center">
     <img class="h-32" src="{{ "images/explora.svg" | absURL }}" alt="explora">
-    <h2 class="mt-6 font-lores text-space-cadet uppercase text-3xl lg:text-5xl">Explora<br>los datos</h2>
+    <h2 class="mt-6 font-lores text-space-cadet uppercase text-3xl lg:text-5xl mx-auto max-w-sm text-center">{{ T "home_label_explore_the_data_title" }}</h2>
     <p class="text-onyx max-w-md mt-10 text-center">
-      Ingresa al explorador de datos, realiza visualizaciones y descarga la información que desees con las preguntas
-      clave y los filtros de búsqueda.
+      {{ T "home_label_explore_the_data_description" }}
     </p>
     <div
       class="mt-10 flex flex-col space-y-6 items-center md:flex-row md:space-y-0 md:space-x-8 lg:space-x-12 xl:space-x-16">
       <a href="{{ relref . "iniciativas-de-la-pandemia.md" }}"
-        class="text-center bg-space-cadet text-white font-lores px-3 py-2 rounded text-2xl">Iniciativas de<br>la
-        pandemia</a>
+        class="text-center bg-space-cadet text-white font-lores px-3 py-2 rounded text-2xl">{{ T "menu_label_pandemic_initiatives" }}</a>
       <a href="{{ relref . "comparativo-de-leyes.md" }}"
-        class="text-center bg-space-cadet text-white font-lores px-3 py-2 rounded text-2xl">Comparativo<br>de leyes</a>
+        class="text-center bg-space-cadet text-white font-lores px-3 py-2 rounded text-2xl">{{ T "menu_label_compararive_of_laws" }}</a>
       <a href="{{ relref . "encuesta-a-la-ciudadania.md" }}"
-        class="text-center bg-space-cadet text-white font-lores px-3 py-2 rounded text-2xl">Encuesta a
-        la<br>ciudadanía</a>
+        class="text-center bg-space-cadet text-white font-lores px-3 py-2 rounded text-2xl">{{ T "menu_label_citizen_survey" }}</a>
     </div>
   </div>
 </div>
@@ -315,22 +246,20 @@
 <div class="bg-lavender py-32 px-4 text-onyx">
   <div class="max-w-4xl mx-auto">
     <h2 class="mt-6 text-center font-lores text-dodger uppercase text-3xl lg:text-5xl">
-      Este portal <span class="text-ryb">representa un esfuerzo en conjunto</span> de los siguientes participantes:
+      {{ T "home_label_this_portal_represents_title" | safeHTML }}
     </h2>
   </div>
   <div class="text-center max-w-xl mx-auto mt-10">
-    <h3 class="font-lores text-lg lg:text-2xl">Consultor Edgardo Martinez Rojas</h3>
-    <p>Encargado de la comparación de la legislación de protección de datos personales de los países de la región con
-      los Estándares Iberoamericanos de Protección de Datos.</p>
-    <h3 class="font-lores text-lg lg:text-2xl mt-12">Al Sur</h3>
-    <p>Encargado del levantamiento de información sobre las iniciativas de recolección de datos personales durante la
-      pandemia.</p>
-    <h3 class="font-lores text-lg lg:text-2xl mt-12">Datasketch</h3>
-    <p>Encargado del diseño y visualización del portal.</p>
-    <h3 class="font-lores text-lg lg:text-2xl mt-12">Iniciativa Latinoamericana por los Datos abiertos (ILDA)</h3>
-    <p>Apoyó en la coordinación de algunas de las actividades.</p>
-    <h3 class="font-lores text-lg lg:text-2xl mt-12">Banco Interamericano de Desarrollo (BID)</h3>
-    <p>Financió y coordinó parte de los esfuerzos de la plataforma y la encuesta ciudadana.</p>
+    <h3 class="font-lores text-lg lg:text-2xl">{{ T "home_label_participants_consultant" }}</h3>
+    <p>{{ T "home_label_participants_consultant_description" }}</p>
+    <h3 class="font-lores text-lg lg:text-2xl mt-12">{{ T "home_label_al_sur" }}</h3>
+    <p>{{ T "home_label_al_sur_description" }}</p>
+    <h3 class="font-lores text-lg lg:text-2xl mt-12">{{ T "home_datasketch" }}</h3>
+    <p>{{ T "home_datasketch_description" }}</p>
+    <h3 class="font-lores text-lg lg:text-2xl mt-12">{{ T "home_ILDA" }}</h3>
+    <p>{{ T "home_ILDA_description" }}</p>
+    <h3 class="font-lores text-lg lg:text-2xl mt-12">{{ T "home_BID" }}</h3>
+    <p>{{ T "home_BID_description" }}</p>
   </div>
 </div>
 {{ end }}

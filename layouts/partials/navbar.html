@@ -1,46 +1,50 @@
 <header class="bg-space-cadet px-8 py-6 z-20 text-white relative">
   <nav class="flex flex-col items-center md:flex-row md:justify-between">
     <div>&nbsp;</div>
-    <div class="flex mt-4 text-sm space-x-2 md:text-base md:mt-0 md:space-x-4" id="menu-items">
-      <a class="md:px-4 py-2 duration-300 hover:text-caribean" href="{{.Site.BaseURL}}">Inicio</a>
+    <div class="flex mt-4 text-sm items-center space-x-2 md:text-base md:mt-0 md:space-x-4" id="menu-items">
+      {{ if eq .Site.Language.LanguageName "English" }}
+      <a class="md:px-4 py-2 duration-300 hover:text-caribean" href="/en">{{ T "menu_label_home" }}</a>
+      {{ else }}
+      <a class="md:px-4 py-2 duration-300 hover:text-caribean" href="/">{{ T "menu_label_home" }}</a>
+      {{ end }}
       <details class="relative with-hover" tabindex="0" open>
-        <summary class="md:px-4 py-2">Explorador de datos</summary>
+        <summary class="md:px-4 py-2">{{ T "menu_label_data_explorer" }}</summary>
         <ul class="text-center space-y-2 bg-space-cadet py-2 absolute top-0">
-          <li class="pb-2">Explorador de datos</li>
+          <li class="pb-2">{{ T "menu_label_data_explorer" }}</li>
           <li class="px-2">
             <a href="{{ relref . "explorador-de-datos/iniciativas-de-la-pandemia" }}" class="duration-300 hover:text-caribean">
-              Iniciativas de la pandemia
+              {{ T "menu_label_pandemic_initiatives" }}
             </a>
           </li>
           <li class="px-2">
             <a href="{{ relref . "explorador-de-datos/comparativo-de-leyes" }}" class="duration-300 hover:text-caribean">
-              Comparativo de leyes
+              {{ T "menu_label_compararive_of_laws" }}
             </a>
           </li>
           <li class="px-2">
             <a href="{{ relref . "explorador-de-datos/encuesta-a-la-ciudadania" }}" class="duration-300 hover:text-caribean">
-              Encuesta a la ciudadanía
+              {{ T "menu_label_citizen_survey" }}
             </a>
           </li>
         </ul>
       </details>
       <details class="relative with-hover" tabindex="0" open>
-        <summary class="md:px-4 py-2">Metodología</summary>
+        <summary class="md:px-4 py-2">{{ T "menu_label_methodology" }}</summary>
         <ul class="text-center space-y-2 bg-space-cadet py-2 absolute top-0">
-          <li class="pb-2">Metodología</li>
+          <li class="pb-2">{{ T "menu_label_methodology" }}</li>
           <li class="px-2">
             <a href="{{ relref . "metodologia/comparando-las-leyes" }}" class="duration-300 hover:text-caribean">
-              Comparando las leyes
+              {{ T "menu_label_comparing_laws" }}
             </a>
           </li>
           <li class="px-2">
             <a href="{{ relref . "metodologia/que-piensa-la-ciudadania" }}" class="duration-300 hover:text-caribean">
-              ¿Qué piensa la ciudadanía?
+              {{ T "menu_label_what_do_citizens_think" }}
             </a>
           </li>
           <li class="px-2">
             <a href="{{ relref . "metodologia/iniciativa-de-la-pandemia" }}" class="duration-300 hover:text-caribean">
-              Iniciativas de la pandemia
+              {{ T "menu_label_pandemic_initiatives" }}
             </a>
           </li>
         </ul>
@@ -55,6 +59,22 @@
         <a href="" target="_blank" rel="noopener noreferrer">
           <img class="w-2/3 mx-auto" src="{{ "icons/ig-white.svg" | absURL }}" alt="social media">
         </a>
+      </div>
+      <div class="relative">
+        <button
+      class="border border-white py-1 px-2 uppercase duration-300 hover:text-caribean hover:border-caribean"
+      id="button-language">
+      {{ range .Site.Languages }}
+      {{ if eq . $.Site.Language }}
+      {{ . }}
+      {{ end }}
+      {{ end }}
+    </button>
+    <div class="absolute transform -translate-x-1/2 left-1/2 top-10 duration-300 hover:text-caribean hidden" id="language">
+      {{ range $.Translations }}
+      <a class="uppercase" href="{{ .Permalink }}">{{ .Language }}</a>
+      {{ end }}
+    </div>
       </div>
     </div>
   </nav>

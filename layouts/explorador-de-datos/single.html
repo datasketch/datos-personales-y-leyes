@@ -1,11 +1,11 @@
 {{ define "main" }}
 <div class="bg-space-cadet">
   <div class="font-lores text-center max-w-lg mx-auto py-12">
-    <h2 class="text-orange text-xl md:text-2xl uppercase">Explorador de datos</h2>
+    <h2 class="text-orange text-xl md:text-2xl uppercase">{{ T "menu_label_data_explorer" }}</h2>
     <h1 class="text-fuchsia text-3xl md:text-5xl uppercase">{{.Title}}</h1>
     <details>
       <summary role="button" tabindex="0" class="inline-block bg-fuchsia text-space-cadet rounded px-3 py-2 text-lg mt-4">
-        Cómo se usa
+        {{ T "buton_label_how_to_use" }}
       </summary>
       <div class="mt-6 font-usual text-white text-left space-y-4">
         {{ .Content }}

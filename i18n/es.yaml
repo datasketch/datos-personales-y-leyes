@@ -1,0 +1,110 @@
+- id: menu_label_home
+  translation: Inicio
+- id: menu_label_data_explorer
+  translation: Explorador de datos
+- id: menu_label_pandemic_initiatives
+  translation: Iniciativas de la pandemia
+- id: menu_label_compararive_of_laws
+  translation: Comparativo de leyes
+- id: menu_label_citizen_survey
+  translation: Encuesta a la ciudadanía
+- id: menu_label_methodology
+  translation: Metodologia
+- id: menu_label_comparing_laws
+  translation: Comparando las leyes
+- id: menu_label_what_do_citizens_think
+  translation: ¿Qué piensa la ciudadanía?
+- id: footer_label_share
+  translation: Comparte
+- id: footer_label_copyright
+  translation: Todo el material en esta página, cuando no se indique lo contrario, es CC-BY-SA. Si reutilizas o adaptas recursos de esta página por favor vincúlalos y referéncialos.
+- id: home_label_personal_data_and_its_laws_title
+  translation: Los datos personales <span class="block text-orange">y sus leyes
+- id: home_label_personal_data_and_its_laws_description
+  translation: Datos como nuestro domicilio, correo electrónico o número de teléfono son datos personales; que si llegan a estar en manos equivocadas, pueden perjudicarnos. Por eso, este proyecto busca analizar las distintas leyes e iniciativas de datos personales en América Latina y el Caribe y contrastarlas con el Estándar Iberoamericano de Protección de Datos adoptado internacionalmente.
+- id: home_label_why_this_project_title
+  translation: POR QUÉ ESTE <br> PROYECTO
+- id: home_label_why_this_project_description
+  translation: Este proyecto surge como una iniciativa para disponibilizar varios análisis ya realizados sobre las leyes de protección de datos personales en países de América Latina y el Caribe, que incluyen diferentes preguntas que la ciudadanía y la sociedad civil se puede hacer constantemente sobre este tema y puede resolver con datos abiertos disponibles para su uso.
+- id: home_label_what_is_personal_data_title
+  translation: Qué son <span class="lg:block">los datos personales
+- id: home_label_what_is_personal_data_description
+  translation: Es aquella información que sirve para identificar de forma directa o indirecta a una persona, es decir, indica de qué persona se trata (como el nombre, dirección o número de identificación), o da pistas sobre la identidad de la misma.
+- id: home_label_which_laws_are_analized_here_title
+  translation: Qué leyes <span class="lg:block">se analizan</span><span class="">aquí</span>
+- id: home_label_which_laws_are_analized_here_description
+  translation: Este proyecto compara las leyes de protección de datos personales de Argentina, Bolivia, Brasil, Chile, Colombia, Costa Rica, Ecuador, México, Panamá, Paraguay, Perú y Uruguay contra el Estándar Iberoamericano de Protección de Datos. También analiza iniciativas en torno a datos impulsadas durante la pandemia por COVID 19 y la opinion de  ciudadanos sobre el tratamiento de los datos personales.
+- id: home_label_comparing_the_laws_title
+  translation: COMPARANDO <br> LAS LEYES
+- id: home_label_comparing_the_laws_description
+  translation: Este análisis de carácter normativo tiene por objetivo revisar cuál es el grado de avance de las leyes de datos personales entre los paises miembros del BID. A partir de los ejes temáticos de los <a class="underline"
+      href="https://nam02.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.redipd.org%2Fes%2Fdocumentos%2Festandares-iberoamericanos&data=04%7C01%7CEVELYNM%40iadb.org%7C866888898b514583cce808d9dc1a4385%7C9dfb1a055f1d449a896062abcb479e7d%7C0%7C0%7C637782827674631272%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000&sdata=J9YL1cDO1nVODpCrhaBH5JMj6hyq%2FsHkZlP2oS%2BikHM%3D&reserved=0"
+      target="_blank">Estándares de protección de datos personales</a> se identificaron qué leyes de la región regulan esos ejes temáticos. De la investigación realizada se detectaron 12 países con leyes de protección de datos personales vigentes Argentina, Bahamas, Brasil, Colombia, Costa Rica, Ecuador, México (con dos leyes), Nicaragua, Panamá, Perú, Trinidad y Tobago y Uruguay. Tanto Barbados como Jamaica cuentan con una ley aprobada en el parlamento, sin embargo ambas están pendientes de promulgación y, por lo tanto, también pendientes de entrar en vigor. Si bien Chile posee una ley de privacidad que, parcialmente, regula una serie de componentes en materia de datos personales, no se trata de una legislación especializada en la materia. Por otro lado, República Dominicana cuenta con una legislación de alcance sectorial, por lo que no se califica como una legislación transversal en el tema.
+- id: home_label_barbados_mexico_ecuador_title
+  translation: Barbados, México y Ecuador tienen las leyes que <span class="text-ryb">más se ajustan</span> al estándar
+- id: home_label_barbados_mexico_ecuador_description
+  translation: Barbados con su ley de datos personales "Data Protection Act" es el país que más coincide con el Estándar Iberoamericano. Le sigue México con la "Ley General de Protección de Datos Personales en Posesión de Sujetos Obligados" y Ecuador con su "Ley Orgánica de Protección de Datos Personales". El gráfico muestra la puntuación y número de leyes que coinciden, coinciden parcialmente y no coinciden por cada país.
+- id: home_label_chile_bahamas_costa_rica_title
+  translation: Chile, Bahamas y Costa Rica tienen las leyes que <span class="text-ryb">más difieren</span> del estándar
+- id: home_label_chile_bahamas_costa_rica_description
+  translation: La "Ley 19628 Sobre protección de la vida privada" de Chile es la que más difiere del Estándar (161 no coincidencias), le siguen Bahamas y Costa Rica (con 137 no coincidencias cada uno).
+- id: label_explore_data
+  translation: Explorar datos
+- id: home_label_pandemic_initiatives_title
+  translation: LAS INICIATIVAS DE LA PANDEMIA
+- id: home_label_pandemic_initiatives_description
+  translation: Mapea algunas de las tecnologías digitales implementadas por los gobiernos de América Latina destinadas a recopilar información de la población en el contexto del COVID-19 y las analiza desde el punto de vista de derechos digitales. La propuesta metodológica contempló tanto el levantamiento de datos cuantitativos, como un análisis cualitativo orientado a sistematizar información atingente a la implementación de soluciones tecnológicas como parte de las políticas públicas y prácticas estatales en contexto de pandemia. La evaluación más detallada se encuentra disponible en el <a class="underline" href="https://nam02.safelinks.protection.outlook.com/?url=https%3A%2F%2Fcovid.alsur.lat%2Fes%2F&data=04%7C01%7CEVELYNM%40iadb.org%7C866888898b514583cce808d9dc1a4385%7C9dfb1a055f1d449a896062abcb479e7d%7C0%7C0%7C637782827674631272%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000&sdata=v3xHrNY7uRI2tDHol8XSEXVSaBevNRt2sGLbFiKrCKM%3D&reserved=0" target="_blank">Observatorio COVID-19 AlSur</a>
+- id: home_label_the_rights_to_protection_title
+  translation: Los derechos a la <span class="text-fuchsia">protección de datos personales</span> y a la <span class="text-fuchsia">privacidad</span> son los más afectados
+- id: home_label_the_rights_to_protection_description
+  translation: Según las organizaciones evaluadoras, las 12 iniciativas analizadas en este estudio vulneran el derecho a la protección de los datos personales y, de esas, 11 vulneran el derecho a la privacidad también. El derecho al acceso a la información y los derechos a la libertad de circulación y a la salud son vulnerados por 8 y 6 iniciativas, respectivamente.
+- id: home_label_only_three_initiatives_title
+  translation: Solo <span class="text-fuchsia">tres</span> iniciativas contemplan mecanismos de <span class="text-fuchsia">evaluación</span> o <span class="text-fuchsia">auditoría externa</span>
+- id: home_label_only_three_initiatives_description
+  translation: Según el análisis realizado, solo las iniciativas de Colombia, Ecuador y Uruguay contemplan algún mecanismo de evaluación o auditoría técnica externa. De la iniciativa de Brasil no se tiene información sobre este aspecto y los demás países no contemplaron estos mecanismos de auditoría.
+- id: home_label_what_do_citizens_think_title
+  translation: ¿QUÉ PIENSA LA CIUDADANÍA?
+- id: home_label_what_do_citizens_think_description
+  translation: Como parte del estudio <a class="underline"  href="https://nam02.safelinks.protection.outlook.com/?url=https%3A%2F%2Fpublications.iadb.org%2Fpublications%2Fspanish%2Fdocument%2FServicios-publicos-y-gobierno-digital-durante-la-pandemia-Perspectivas-de-los-ciudadanos-los-funcionarios-y-las-instituciones-publicas.pdf&data=04%7C01%7CEVELYNM%40iadb.org%7C866888898b514583cce808d9dc1a4385%7C9dfb1a055f1d449a896062abcb479e7d%7C0%7C0%7C637782827674631272%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000&sdata=lKVwlPcDgWGDGay24uyzCrxvGlw3DJSzE6%2Bg835UJJM%3D&reserved=0" target="_blank">“Servicios públicos y gobierno digital durante la pandemia perspectivas de los ciudadanos, los funcionarios y las instituciones públicas”</a> se realizó una encuesta telefónica representativa a nivel nacional entre julio y agosto de 2020 a 10,207 ciudadanos adultos de Chile, Costa Rica, Ecuador, El Salvador, Honduras, México, Panamá, Paraguay, Perú y Uruguay. La encuesta incluyó un conjunto limitado de preguntas sobre trámites antes y durante la pandemia, perspectivas a futuro y opinión de los ciudadanos sobre datos personales.
+- id: home_label_there_is_a_lack_of_knowledge_title
+  translation: Hay <span class="text-fuchsia">desconocimiento</span> sobre lo que son los datos personales
+- id: home_label_there_is_a_lack_of_knowledge_description
+  translation: El 51% de las personas que respondieron la pregunta de "¿Le parece que compartir sus datos personales tiene más beneficios que riesgos?" con "Más riesgos que beneficios" (eje de la izquierda), estuvieron de acuerdo con la pregunta "¿El gobierno debería multar a las personas que son coronavirus positivo y no permiten la geolocalización de sus celulares?” (eje de la derecha). Considerar que es riesgoso compartir los datos personales pero facultar al gobierno para multar a quienes no permiten la geolocalización podría representar una discordancia y reflejar un desconocimiento de los datos personales.
+- id: home_label_some_people_do_not_find_title
+  translation: Algunas personas <span class="text-fuchsia">no le hallan valor</span> a sus datos personales
+- id: home_label_some_people_do_not_find_description
+  translation: El 60% de quienes contestaron No a la pregunta "¿Sabe lo que hacen los gobiernos con sus datos personales?” (eje de la izquierda) contestaron Sí a la pregunta "¿El gobierno puede proporcionar beneficios al recopilar sus datos y el de otras personas para superar los riesgos potenciales en épocas de pandemia?” (eje de la derecha). La voluntad de entregar esta información al Estado sin la necesidad de saber qué se hace con esta, podría reflejar que estas personas no le hallan un valor a sus datos personales.
+- id: home_label_in_times_of_pandemics_title
+  translation: En épocas de pandemia, las personas <span class="text-fuchsia">cambian de opinión</span>
+- id: home_label_in_times_of_pandemics_description
+  translation: El 61% de las personas que consideran "más riesgos” a la pregunta "¿Le parece que compartir sus datos personales tiene más beneficios que riesgos?” (eje de la izquierda) también consideran que hay beneficios a la pregunta "¿El gobierno puede proporcionar beneficios al recopilar sus datos y el de otras personas para superar los riesgos potenciales en épocas de pandemia?” (eje de la derecha). Esto podría reflejar un cambio de opinión con respecto a lo que se considera riesgoso o beneficioso al introducir el factor de la pandemia.
+- id: home_label_explore_the_data_title
+  translation: EXPLORA LOS DATOS
+- id: home_label_explore_the_data_description
+  translation: Ingresa al explorador de datos, realiza visualizaciones y descarga la información que desees con las preguntas clave y los filtros de búsqueda.
+- id: home_label_this_portal_represents_title
+  translation: Este portal <span class="text-ryb">representa un esfuerzo en conjunto</span> de los siguientes participantes
+- id: home_label_participants_consultant
+  translation: Consultor Edgardo Martinez Rojas
+- id: home_label_participants_consultant_description
+  translation: Encargado de la comparación de la legislación de protección de datos personales de los países de la región con los Estándares Iberoamericanos de Protección de Datos.
+- id: home_label_al_sur
+  translation: Al Sur
+- id: home_label_al_sur_description
+  translation: Encargado del levantamiento de información sobre las iniciativas de recolección de datos personales durante la pandemia.
+- id: home_datasketch
+  translation: Datasketch
+- id: home_datasketch_description
+  translation: Encargado del diseño y visualización del portal.
+- id: home_ILDA
+  translation: Iniciativa Latinoamericana por los Datos abiertos (ILDA)
+- id: home_ILDA_description
+  translation: Apoyó en la coordinación de algunas de las actividades.
+- id: home_BID
+  translation: Banco Interamericano de Desarrollo (BID)
+- id: home_BID_description
+  translation: Financió y coordinó parte de los esfuerzos de la plataforma y la encuesta ciudadana.
+- id: buton_label_how_to_use
+  translation: Cómo se usa
+
+

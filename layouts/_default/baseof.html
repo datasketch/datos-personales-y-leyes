@@ -19,5 +19,10 @@
     {{ block "main" . }}{{ end }}
   </main>
   {{ partial "footer.html" . }}
+  <script>
+      document.querySelector('#button-language').addEventListener('click', function(e) {
+        document.querySelector('#language').classList.toggle('hidden')
+      })
+  </script>
 </body>
 </html>
