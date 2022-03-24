@@ -13,7 +13,11 @@
         </div>
         <div class="w-full lg:w-1/4">
           <div class="space-y-2 font-bold text-lg">
-            <a href="{{ .Site.BaseURL }}" class="font-usual hover:text-caribean">{{ T "menu_label_home" }}</a><br>
+            {{ if eq .Site.Language.LanguageName "English" }}
+            <a href="https://www.datasketch.co/bid/datos-personales-y-leyes/en/" class="font-usual hover:text-caribean">{{ T "menu_label_home" }}</a><br>
+            {{ else }}
+            <a href="https://www.datasketch.co/bid/datos-personales-y-leyes/" class="font-usual hover:text-caribean">{{ T "menu_label_home" }}</a><br>
+            {{ end }}
             <a href="{{ relref . "explorador-de-datos/iniciativas-de-la-pandemia" }}" class="font-usual hover:text-caribean">{{ T "menu_label_pandemic_initiatives" }}</a><br>
             <a href="{{ relref . "explorador-de-datos/comparativo-de-leyes" }}" class="font-usual hover:text-caribean">{{ T "menu_label_compararive_of_laws" }}</a><br>
             <a href="{{ relref . "explorador-de-datos/encuesta-a-la-ciudadania" }}" class="font-usual hover:text-caribean">{{ T "menu_label_citizen_survey" }}</a><br>
@@ -21,14 +25,11 @@
           <div class="text-lg font-bold space-y-2 mt-6 flex items-end space-x-6">
             <p>{{ T "footer_label_share" }}</p>
             <div class="flex items-center space-x-4">
-              <a href="" target="_blank" rel="noopener noreferrer">
+              <a href="https://facebook.com/sharer/sharer.php?u={{ .Page.Permalink }}" target="_blank" rel="noopener noreferrer">
                 <img src="{{"icons/fb-white.svg"|absURL}}" alt="">
               </a>
-              <a href="" target="_blank" rel="noopener noreferrer">
+              <a href="https://twitter.com/intent/tweet/?url={{ .Page.Permalink }}" target="_blank" rel="noopener noreferrer">
                 <img src="{{"icons/tw-white.svg"|absURL}}" alt="">
-              </a>
-              <a href="" target="_blank" rel="noopener noreferrer">
-                <img src="{{"icons/ig-white.svg"|absURL}}" alt="">
               </a>
             </div>
           </div>
