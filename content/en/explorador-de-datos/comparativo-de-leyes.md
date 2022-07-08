@@ -1,6 +1,6 @@
 ---
 title: Comparison of laws
-app: https://datasketch.shinyapps.io/bid-leyes-app/
+app: https://datasketch.shinyapps.io/bid-leyes-app/?lang=en
 ---
 
 The information in this data exploration tool is based on a comparative evaluation of data protection laws in Latin American countries carried out by the Inter-American Development Bank, which contains the coincidences, non-coincidences and partial coincidences of the laws of each country. with the Ibero-American Data Protection Standard.

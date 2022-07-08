@@ -1,6 +1,6 @@
 ---
 title: Citizen survey
-app: https://datasketch.shinyapps.io/bid-encuestas-app/
+app: https://datasketch.shinyapps.io/bid-encuestas-app/?lang=en
 ---
 
 The information in this data exploration tool is based on a survey of more than 10,000 people from different Latin American countries who gave their point of view, among other things, on the personal data protection situation in their country. We selected the questions that were most relevant to personal data and these are the results.

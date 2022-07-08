@@ -1,6 +1,6 @@
 ---
 title: Pandemic initiatives
-app: https://datasketch.shinyapps.io/bid-fichas-sur-app/
+app: https://datasketch.shinyapps.io/bid-fichas-sur-app/?lang=en
 ---
 
 The data that can be viewed in this application is the product of research carried out in different countries of Latin America and the Caribbean by local organizations that evaluated the characteristics and implementation of technological initiatives promoted by the governments of these countries to mitigate the covid-19 pandemic. 19.
