@@ -62,13 +62,21 @@
     {{ T "home_label_comparing_the_laws_description" | safeHTML }}
   </p>
   <div class="max-w-7xl mx-auto mt-10">
-    <iframe class="w-full" height="600px" src="{{ "charts/heatmap-summary.html" | absURL }}" frameborder="0"></iframe>
+    {{ if eq .Site.Language.Lang "es" }}
+      <iframe class="w-full" height="600px" src="{{ "charts/heatmap-summary.html" | absURL }}" frameborder="0"></iframe>
+    {{ else }}
+      <iframe class="w-full" height="600px" src="{{ "charts/heatmap-summary-en.html" | absURL }}" frameborder="0"></iframe>
+    {{ end }}
   </div>
   <div class="mx-auto mt-32 w-full md:w-10/12">
     <div class="flex flex-col items-start space-y-32">
       <div class="flex flex-col lg:flex-row lg:space-x-20">
         <div class="w-full lg:w-1/2">
-          <iframe class="w-full h-96" src="{{ "charts/coincide-map.html" | absURL }}" frameborder="0"></iframe>
+          {{ if eq .Site.Language.Lang "es" }}
+            <iframe class="w-full h-96" src="{{ "charts/coincide-map.html" | absURL }}" frameborder="0"></iframe>
+          {{ else }}
+            <iframe class="w-full h-96" src="{{ "charts/coincide-map-en.html" | absURL }}" frameborder="0"></iframe>
+          {{ end }}
         </div>
         <div class="w-full lg:w-1/2">
           <h2 class="font-lores uppercase text-2xl lg:text-4xl text-dodger">
@@ -93,7 +101,11 @@
             class="bg-ryb text-white font-lores px-3 py-2 rounded text-lg mt-6 inline-block">{{ T "label_explore_data" }}</a>
         </div>
         <div class="w-full lg:w-1/2">
-          <iframe class="w-full h-96" src="{{ "charts/no-coincide-map.html" | absURL }}" frameborder="0"></iframe>
+          {{ if eq .Site.Language.Lang "es" }}
+            <iframe class="w-full h-96" src="{{ "charts/no-coincide-map.html" | absURL }}" frameborder="0"></iframe>
+          {{ else }}
+            <iframe class="w-full h-96" src="{{ "charts/no-coincide-map-en.html" | absURL }}" frameborder="0"></iframe>
+          {{ end }}
         </div>
       </div>
     </div>
