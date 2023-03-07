@@ -1,9 +1,9 @@
 baseURL = "/bid/datos-personales-y-leyes/"
+publishDir = "public/bid/datos-personales-y-leyes/"
 languageCode = "es"
 defaultContentLanguage = 'es'
 title = "Los datos personales y sus leyes"
 taxonomies = []
-publishDir = "docs"
 
 [languages]
 [languages.es]
