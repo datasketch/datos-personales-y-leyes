@@ -1,5 +1,5 @@
 [build]
-    publish = "public/bid/datos-personales-y-leyes"
+    publish = "public"
     command = "hugo --gc --minify"
 
 [[headers]]
