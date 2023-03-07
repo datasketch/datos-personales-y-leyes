@@ -1,6 +1,6 @@
 [build]
-    base = "public/bid/datos-personales-y-leyes"
-    command = "hugo --gc"
+    publish = "public/bid/datos-personales-y-leyes"
+    command = "hugo --gc --minify"
 
 [[headers]]
     for = "/*"
