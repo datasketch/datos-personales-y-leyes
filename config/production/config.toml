@@ -1,5 +1,5 @@
-baseURL = "https://datospersonalesyleyes.netlify.app/"
-publishDir = "public"
+baseURL = "https://datasketch.co/bid/datos-personales-y-leyes/"
+publishDir = "public/bid/datos-personales-y-leyes"
 languageCode = "es"
 defaultContentLanguage = 'es'
 title = "Los datos personales y sus leyes"
