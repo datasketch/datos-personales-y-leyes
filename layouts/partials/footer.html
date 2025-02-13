@@ -14,9 +14,9 @@
         <div class="w-full lg:w-1/4">
           <div class="space-y-2 font-bold text-lg">
             {{ if eq .Site.Language.LanguageName "English" }}
-            <a href="https://www.datasketch.blog/bid/datos-personales-y-leyes/en/" class="font-usual hover:text-caribean">{{ T "menu_label_home" }}</a><br>
+            <a href="{{ "en/" | absURL }}" class="font-usual hover:text-caribean">{{ T "menu_label_home" }}</a><br>
             {{ else }}
-            <a href="https://www.datasketch.blog/bid/datos-personales-y-leyes/" class="font-usual hover:text-caribean">{{ T "menu_label_home" }}</a><br>
+            <a href="{{ "/" | absURL }}" class="font-usual hover:text-caribean">{{ T "menu_label_home" }}</a><br>
             {{ end }}
             <a href="{{ relref . "explorador-de-datos/iniciativas-de-la-pandemia" }}" class="font-usual hover:text-caribean">{{ T "menu_label_pandemic_initiatives" }}</a><br>
             <a href="{{ relref . "explorador-de-datos/comparativo-de-leyes" }}" class="font-usual hover:text-caribean">{{ T "menu_label_compararive_of_laws" }}</a><br>

@@ -1,5 +1,3 @@
-baseURL = "https://datasketch.blog/bid/datos-personales-y-leyes/"
-publishDir = "public/bid/datos-personales-y-leyes"
 languageCode = "es"
 defaultContentLanguage = 'es'
 title = "Los datos personales y sus leyes"
@@ -10,6 +8,7 @@ taxonomies = []
 contentDir = "content/es"
 languageName = "Español"
 weight = 1
+
 [languages.en]
 contentDir = "content/en"
 languageName = "English"
