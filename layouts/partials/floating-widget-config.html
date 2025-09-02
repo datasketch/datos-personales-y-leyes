@@ -1,0 +1,134 @@
+<!-- 
+  CONFIGURACIÓN DEL WIDGET FLOTANTE
+  
+  Para personalizar el widget, modifica las siguientes variables:
+  
+  1. iframeUrl: URL del iframe que quieres mostrar
+  2. buttonColor: Color del botón (usa las clases de Tailwind del proyecto)
+  3. modalTitle: Título que aparece en el modal
+  4. buttonIcon: Puedes cambiar el SVG del icono
+  5. position: Posición del botón (bottom-6 right-6, bottom-6 left-6, etc.)
+-->
+
+<!-- Botón flotante -->
+<div id="floating-widget" class="fixed bottom-6 right-6 z-50">
+  <button 
+    id="widget-trigger" 
+    class="bg-fuchsia hover:bg-fuchsia-600 text-white rounded-full p-4 shadow-lg transition-all duration-300 hover:scale-110 focus:outline-none focus:ring-4 focus:ring-fuchsia-300"
+    aria-label="Abrir widget"
+  >
+    <!-- Icono personalizable - puedes cambiar este SVG -->
+    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
+    </svg>
+  </button>
+</div>
+
+<!-- Modal/Dialog -->
+<div 
+  id="widget-modal" 
+  class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden items-center justify-center p-4"
+  role="dialog"
+  aria-modal="true"
+  aria-labelledby="modal-title"
+>
+  <div class="bg-white rounded-lg shadow-xl max-w-4xl w-full max-h-[90vh] overflow-hidden">
+    <!-- Header del modal -->
+    <div class="bg-green-100 p-4 border-b border-gray-200">
+      <div class="flex items-center justify-between">
+        <div class="flex items-center space-x-3">
+          <div class="flex flex-col">
+            <h2 id="modal-title" class="text-lg font-bold text-gray-800">
+              Bot
+            </h2>
+            <p class="text-sm text-gray-600">Tu asistente de economía</p>
+          </div>
+        </div>
+        <div class="flex items-center space-x-2">
+          <span class="text-xs text-orange-600 font-medium">Este es un producto en fase beta: sus respuestas pueden tener errores.</span>
+          <button 
+            id="close-modal" 
+            class="text-gray-400 hover:text-gray-600 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-green-300 rounded-full p-1"
+            aria-label="Cerrar modal"
+          >
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+      
+      <!-- Powered by section -->
+      <div class="flex items-center mt-3">
+        <span class="text-xs text-gray-500 mr-2">Powered by</span>
+        <img src="{{ "images/powered-by-datasketch-pink.svg" | absURL }}" alt="datasketch" class="h-4">
+        <span class="text-xs text-gray-500 ml-2">ECONOMIA PARA LA PIPOL</span>
+      </div>
+    </div>
+    
+    <!-- Contenido del modal -->
+    <div class="p-6">
+      <div class="w-full h-96 md:h-[500px]">
+        <iframe 
+          id="widget-iframe"
+          src=""
+          class="w-full h-full border-0 rounded"
+          frameborder="0"
+          allowfullscreen
+          title="Bot Interactivo"
+        ></iframe>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // ===== CONFIGURACIÓN =====
+  // Cambia esta URL por la que necesites
+  const iframeUrl = 'https://services.datasketch.co/org_iadb_leyes-y-protecciones-datos_miqqa/';
+  
+  // Colores disponibles del proyecto:
+  // bg-fuchsia, bg-orange, bg-caribean, bg-space-cadet, bg-ryb, bg-dodger, bg-gemstone-green
+  
+  // ===== FUNCIONALIDAD =====
+  const trigger = document.getElementById('widget-trigger');
+  const modal = document.getElementById('widget-modal');
+  const iframe = document.getElementById('widget-iframe');
+  const closeButtons = document.querySelectorAll('#close-modal');
+  
+  // Abrir modal
+  trigger.addEventListener('click', function() {
+    iframe.src = iframeUrl;
+    modal.classList.remove('hidden');
+    modal.classList.add('flex');
+    document.body.style.overflow = 'hidden';
+  });
+  
+  // Cerrar modal
+  function closeModal() {
+    modal.classList.add('hidden');
+    modal.classList.remove('flex');
+    iframe.src = '';
+    document.body.style.overflow = 'auto';
+  }
+  
+  closeButtons.forEach(button => {
+    button.addEventListener('click', closeModal);
+  });
+  
+  // Cerrar con tecla Escape
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
+      closeModal();
+    }
+  });
+  
+  // Cerrar al hacer clic fuera del modal
+  modal.addEventListener('click', function(e) {
+    if (e.target === modal) {
+      closeModal();
+    }
+  });
+});
+</script>

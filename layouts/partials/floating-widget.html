@@ -1,0 +1,106 @@
+<!-- Botón flotante -->
+<div id="floating-widget" class="fixed bottom-6 right-6 z-50">
+  <button 
+    id="widget-trigger" 
+    class="bg-blue-600 hover:bg-blue-700 text-white rounded-full p-4 shadow-lg transition-all duration-300 hover:scale-110 focus:outline-none focus:ring-4 focus:ring-blue-300"
+    aria-label="Abrir asistente"
+  >
+    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
+    </svg>
+  </button>
+</div>
+
+<!-- Modal/Dialog -->
+<div 
+  id="widget-modal" 
+  class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden items-center justify-center p-4"
+  role="dialog"
+  aria-modal="true"
+  aria-labelledby="modal-title"
+>
+  <div class="bg-white rounded-lg shadow-xl max-w-6xl w-full max-h-[95vh] overflow-hidden">
+        <!-- Header del modal -->
+    <div class="bg-white px-4 py-3 border-b border-gray-200">
+      <div class="flex items-center justify-between">
+        <!-- Icono del bot -->
+        <div class="flex items-center">
+          <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
+          </svg>
+        </div>
+        
+        <!-- Botón cerrar -->
+        <button 
+          id="close-modal" 
+          class="text-gray-400 hover:text-gray-600 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-gray-300 rounded-full p-1"
+          aria-label="Cerrar modal"
+        >
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+    
+    <!-- Contenido del modal - Iframe -->
+    <div class="p-6">
+      <div class="w-full h-96 md:h-[500px]">
+        <iframe 
+          id="widget-iframe"
+          src=""
+          class="w-full h-full border-0 rounded"
+          frameborder="0"
+          allowfullscreen
+          title="Bot Interactivo"
+        ></iframe>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const trigger = document.getElementById('widget-trigger');
+  const modal = document.getElementById('widget-modal');
+  const iframe = document.getElementById('widget-iframe');
+  const closeButtons = document.querySelectorAll('#close-modal');
+  
+  // URL del servicio - puedes cambiar esto por la URL que necesites
+  const serviceUrl = 'https://services.datasketch.co/org_iadb_leyes-y-protecciones-datos_miqqa/';
+  
+  // Abrir modal
+  trigger.addEventListener('click', function() {
+    iframe.src = serviceUrl;
+    modal.classList.remove('hidden');
+    modal.classList.add('flex');
+    document.body.style.overflow = 'hidden';
+  });
+  
+  // Cerrar modal
+  function closeModal() {
+    modal.classList.add('hidden');
+    modal.classList.remove('flex');
+    iframe.src = '';
+    document.body.style.overflow = 'auto';
+  }
+  
+  closeButtons.forEach(button => {
+    button.addEventListener('click', closeModal);
+  });
+  
+  // Cerrar con tecla Escape
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
+      closeModal();
+    }
+  });
+  
+  // Cerrar al hacer clic fuera del modal
+  modal.addEventListener('click', function(e) {
+    if (e.target === modal) {
+      closeModal();
+    }
+  });
+});
+</script>
